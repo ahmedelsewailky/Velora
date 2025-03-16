@@ -26,7 +26,7 @@ function html() {
     return src(paths.html)
         .pipe(fileInclude({ prefix: "@@", basepath: "./src/html" }))
         .pipe(htmlbeautify({ indent_size: 4 }))
-        .pipe(dest("dist"))
+        .pipe(dest("docs"))
         .pipe(browserSync.stream());
 }
 
@@ -34,7 +34,7 @@ function pages() {
     return src(paths.pages)
         .pipe(fileInclude({ prefix: "@@", basepath: "./src/html" }))
         .pipe(htmlbeautify({ indent_size: 4 }))
-        .pipe(dest("dist/html"))
+        .pipe(dest("docs/html"))
         .pipe(browserSync.stream());
 }
 
@@ -44,25 +44,25 @@ function style() {
         .pipe(scss({ outputStyle: "compressed" }).on("error", scss.logError))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write("."))
-        .pipe(dest("dist/assets/css"))
+        .pipe(dest("docs/assets/css"))
         .pipe(browserSync.stream());
 }
 
 function scripts() {
     return src(paths.js)
         .pipe(concat("main.js"))
-        .pipe(dest("dist/assets/js"))
+        .pipe(dest("docs/assets/js"))
         .pipe(browserSync.stream());
 }
 
 function libs() {
     return src(paths.libs)
-        .pipe(dest("dist/assets/libs"))
+        .pipe(dest("docs/assets/libs"))
         .pipe(browserSync.stream());
 }
 
 function serve() {
-    browserSync.init({ server: { baseDir: "dist" } });
+    browserSync.init({ server: { baseDir: "docs" } });
     watch(paths.html, html);
     watch(paths.pages, pages);
     watch(paths.includes, html);
