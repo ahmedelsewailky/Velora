@@ -1,5 +1,13 @@
 {
+    "name": "velora",
+    "version": "1.0",
+    "author": "Ahmed Elsewailky",
+    "description": "Online Courses Bootstrap Template",
+    "homepage": "https://ahmedelsewailky.github.io/Velora/",
     "type": "module",
+    "scripts": {
+        "dev": "gulp"
+    },
     "devDependencies": {
         "browser-sync": "^3.0.3",
         "gulp": "^5.0.0",
