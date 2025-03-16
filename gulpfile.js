@@ -24,7 +24,11 @@ const paths = {
 
 function html() {
     return src(paths.html)
-        .pipe(fileInclude({ prefix: "@@", basepath: "./src/html" }))
+        .pipe(fileInclude({
+            prefix: "@@", basepath: "./src/html", context: {
+                BASE_URL: "https://ahmedelsewailky.github.io/Velora"
+            }
+        }))
         .pipe(htmlbeautify({ indent_size: 4 }))
         .pipe(dest("docs"))
         .pipe(browserSync.stream());
@@ -32,7 +36,11 @@ function html() {
 
 function pages() {
     return src(paths.pages)
-        .pipe(fileInclude({ prefix: "@@", basepath: "./src/html" }))
+        .pipe(fileInclude({
+            prefix: "@@", basepath: "./src/html", context: {
+                BASE_URL: "https://ahmedelsewailky.github.io/Velora"
+            }
+        }))
         .pipe(htmlbeautify({ indent_size: 4 }))
         .pipe(dest("docs/html"))
         .pipe(browserSync.stream());
