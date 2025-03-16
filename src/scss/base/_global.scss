@@ -1,0 +1,18 @@
+body {
+    font: {
+        size: 14px;
+        family: "Changa", "Poppins", sans-serif;
+    }
+
+    background-color: whitesmoke;
+}
+
+main {
+    height: calc(100vh - 100px);
+    padding: 24px 0;
+}
+
+footer {
+    background-color: #fff;
+    border: 1px solid #eee;
+}
