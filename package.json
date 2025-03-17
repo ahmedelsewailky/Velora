@@ -7,7 +7,7 @@
     "type": "module",
     "scripts": {
         "dev": "cross-env NODE_ENV=development gulp",
-        "build": "gulp"
+        "build": "cross-env NODE_ENV=production gulp"
     },
     "devDependencies": {
         "browser-sync": "^3.0.3",

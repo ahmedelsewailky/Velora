@@ -9,9 +9,8 @@ import htmlbeautify from "gulp-html-beautify";
 import browserSyncPackage from "browser-sync";
 
 const browserSync = browserSyncPackage.create();
-const scss = gulpSass(sass);
 
-const isProduction = process.env.NODE_ENV === "development";
+const scss = gulpSass(sass);
 
 const root = "src";
 
@@ -29,7 +28,7 @@ function html() {
     return src(paths.html)
         .pipe(fileInclude({
             prefix: "@@", basepath: "./src/html", context: {
-                BASE_URL: isProduction ? "" : "/Velora" }
+                BASE_URL: process.env.NODE_ENV === "production" ? "/Velora" : ""  }
         }))
         .pipe(htmlbeautify({ indent_size: 4 }))
         .pipe(dest("docs"))
@@ -40,7 +39,7 @@ function pages() {
     return src(paths.pages)
         .pipe(fileInclude({
             prefix: "@@", basepath: "./src/html", context: {
-                BASE_URL: isProduction ? "" : "/Velora" 
+                BASE_URL: process.env.NODE_ENV === "production" ? "/Velora" : ""
             }
         }))
         .pipe(htmlbeautify({ indent_size: 4 }))
