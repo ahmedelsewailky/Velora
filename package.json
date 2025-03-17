@@ -6,10 +6,12 @@
     "homepage": "https://ahmedelsewailky.github.io/Velora/",
     "type": "module",
     "scripts": {
-        "dev": "gulp"
+        "dev": "cross-env NODE_ENV=development gulp",
+        "build": "gulp"
     },
     "devDependencies": {
         "browser-sync": "^3.0.3",
+        "cross-env": "^7.0.3",
         "gulp": "^5.0.0",
         "gulp-autoprefixer": "^9.0.0",
         "gulp-concat": "^2.6.1",

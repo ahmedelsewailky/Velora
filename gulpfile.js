@@ -11,7 +11,7 @@ import browserSyncPackage from "browser-sync";
 const browserSync = browserSyncPackage.create();
 const scss = gulpSass(sass);
 
-const isProduction = process.env.NODE_ENV === "production";
+const isProduction = process.env.NODE_ENV === "development";
 
 const root = "src";
 
@@ -29,7 +29,7 @@ function html() {
     return src(paths.html)
         .pipe(fileInclude({
             prefix: "@@", basepath: "./src/html", context: {
-                BASE_URL: isProduction ? "https://ahmedelsewailky.github.io/Velora" : "" }
+                BASE_URL: isProduction ? "" : "/Velora" }
         }))
         .pipe(htmlbeautify({ indent_size: 4 }))
         .pipe(dest("docs"))
@@ -40,7 +40,7 @@ function pages() {
     return src(paths.pages)
         .pipe(fileInclude({
             prefix: "@@", basepath: "./src/html", context: {
-                BASE_URL: "https://ahmedelsewailky.github.io/Velora"
+                BASE_URL: isProduction ? "" : "/Velora" 
             }
         }))
         .pipe(htmlbeautify({ indent_size: 4 }))
