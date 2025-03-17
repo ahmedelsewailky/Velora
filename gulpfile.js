@@ -19,7 +19,8 @@ const paths = {
     includes: `${root}/html/{components,layouts,includes}/**/*.html`,
     css: `${root}/scss/**/*.scss`,
     js: `${root}/js/**/*.js`,
-    libs: `${root}/libs/**/*.*`
+    libs: `${root}/libs/**/*.*`,
+    images: `${root}/img/**/*.*`
 }
 
 function html() {
@@ -69,6 +70,12 @@ function libs() {
         .pipe(browserSync.stream());
 }
 
+function images() {
+    return src(paths.images, { encoding: false })
+        .pipe(dest("docs/assets/images"))
+        .pipe(browserSync.stream());
+}
+
 function serve() {
     browserSync.init({ server: { baseDir: "docs" } });
     watch(paths.html, html);
@@ -77,6 +84,7 @@ function serve() {
     watch(paths.css, style);
     watch(paths.js, scripts);
     watch(paths.libs, libs);
+    watch(paths.images, images);
 }
 
-export default series(style, scripts, html, pages, libs, serve);
+export default series(style, scripts, html, pages, libs, images, serve);
