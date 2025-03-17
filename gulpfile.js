@@ -24,27 +24,20 @@ const paths = {
     images: `${root}/img/**/*.*`
 }
 
-function html() {
-    return src(paths.html)
+function processHtml(srcPath, destPath) {
+    return src(srcPath)
         .pipe(fileInclude({
-            prefix: "@@", basepath: "./src/html", context: {
-                BASE_URL: process.env.NODE_ENV === "production" ? "/Velora" : ""  }
+            prefix: "@@", 
+            basepath: "./src/html", 
+            context: { BASE_URL: process.env.NODE_ENV === "production" ? "/Velora" : "" }
         }))
         .pipe(htmlbeautify({ indent_size: 4 }))
-        .pipe(dest("docs"))
+        .pipe(dest(destPath))
         .pipe(browserSync.stream());
 }
 
-function pages() {
-    return src(paths.pages)
-        .pipe(fileInclude({
-            prefix: "@@", basepath: "./src/html", context: {
-                BASE_URL: process.env.NODE_ENV === "production" ? "/Velora" : ""
-            }
-        }))
-        .pipe(htmlbeautify({ indent_size: 4 }))
-        .pipe(dest("docs/html"))
-        .pipe(browserSync.stream());
+function html() {
+    return processHtml(paths.html, "docs") && processHtml(paths.pages, "docs/html");
 }
 
 function style() {
@@ -79,7 +72,6 @@ function images() {
 function serve() {
     browserSync.init({ server: { baseDir: "docs" } });
     watch(paths.html, html);
-    watch(paths.pages, pages);
     watch(paths.includes, html);
     watch(paths.css, style);
     watch(paths.js, scripts);
@@ -87,4 +79,4 @@ function serve() {
     watch(paths.images, images);
 }
 
-export default series(style, scripts, html, pages, libs, images, serve);
+export default series(style, scripts, html, libs, images, serve);
