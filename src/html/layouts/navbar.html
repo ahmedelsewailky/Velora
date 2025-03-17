@@ -1,10 +1,11 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarMenu"
+            aria-controls="primaryNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse" id="primaryNavbarMenu">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
@@ -16,19 +17,78 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="html/courses-1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                    <a class="nav-link dropdown-toggle" href="html/courses-1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="html/courses-1.html">Home One</a></li>
+                        <li><a class="dropdown-item" href="html/courses-1.html">Course One</a></li>
                         <li><a class="dropdown-item" href="html/courses-2.html">Course Two</a></li>
                         <li><a class="dropdown-item" href="html/courses-3.html">Course Three</a></li>
                         <li><a class="dropdown-item" href="html/courses-details.html">Course Details</a></li>
                     </ul>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Products</a></li>
+                                <li><a class="dropdown-item" href="">Product Details</a></li>
+                                <li><a class="dropdown-item" href="">Product Cart</a></li>
+                                <li><a class="dropdown-item" href="">Product Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teacher</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Teachers</a></li>
+                                <li><a class="dropdown-item" href="">Teacher Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="faqs.html">FAQ's</a>
+                            <a class="dropdown-item" href="error.html">Error 404</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="html/blog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="html/blog.html">Blog</a></li>
+                        <li><a class="dropdown-item" href="html/blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/about.html">About</a>
+                    <a class="nav-link" href="html/contact-us.html">Contact</a>
+                </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="tel:+201080720455" class="phone">(+20)10-80720455</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:ahmed.elsewailky@gmail.com" class="mail">support@gmail.com</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="shopping-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
+                                <path d="M9 11V6a3 3 0 0 1 6 0v5" />
+                            </g>
+                        </svg>
+                        <span>3</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="sidebar-info-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
