@@ -1,18 +1,38 @@
+@use '../abstracts/mixins' as *;
+
+@use '../abstracts/helpers';
+
+:root {
+    @each $name, $color in $colors {
+        --#{$name}-color: #{$color};
+        --#{$name}-hover: #{darken-color($color, 10%)};
+    }
+}
+
 body {
     font: {
         size: 14px;
-        family: "Changa", "Poppins", sans-serif;
+        family: "Poppins", "Changa", sans-serif;
     }
-
     background-color: whitesmoke;
 }
 
-main {
-    height: calc(100vh - 100px);
-    padding: 24px 0;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-footer {
-    background-color: #fff;
-    border: 1px solid #eee;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
+
+span {
+    display: inline-block;
+}
+

@@ -1,0 +1,49 @@
+@use 'sass:color';
+
+@use '../abstracts/mixins' as *;
+
+@use '../abstracts/helpers';
+
+// Buttons
+.btn {
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    @extend %base-font;
+    font-weight: 500;
+    border: none;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+
+    @each $name, $color in $colors {
+        &-#{$name} {
+            background-color: $color;
+            color: white;
+            &:hover {
+                color: white;
+                background-color: darken-color($color, 100%);
+            }
+        }
+
+        &-gradient-#{$name} {
+            background: linear-gradient(180deg, $color, color.adjust($color, $lightness: -25%));
+
+            &:hover {
+                color: white;
+                background: linear-gradient(135deg, color.adjust($color, $lightness: 10%), $color);
+            }
+        }
+    }
+}
+
+// Form Control
+.form-control {
+    border-radius: 0;
+    @extend %base-font;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
