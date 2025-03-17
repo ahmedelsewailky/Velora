@@ -3,7 +3,7 @@
 .header {
     padding: 12px 0;
 
-    .header-logo {
+    &-logo {
         a {
             text-transform: uppercase;
             font-weight: 700;
@@ -18,7 +18,7 @@
         }
     }
     
-    .header-search {
+    &-search {
         display: flex;
         @extend %border;
         border-radius: 50px;
@@ -64,7 +64,7 @@
         }
     }
 
-    .header-auth-buttons {
+    &-auth-buttons {
         display: flex;
         justify-content: end;
 

@@ -2,11 +2,11 @@
   font-size: 13px;
 }
 
-.header .header-search {
+.header-search {
   border: 1px solid #e5e7eb;
 }
 
-.header .header-logo svg {
+.header-logo svg {
   color: var(--primary-color);
 }
 
@@ -179,37 +179,37 @@ span {
 .header {
   padding: 12px 0;
 }
-.header .header-logo a {
+.header-logo a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.5px;
 }
-.header .header-logo svg {
+.header-logo svg {
   width: 40px;
   height: 32px;
 }
-.header .header-search {
+.header-search {
   display: flex;
   border-radius: 50px;
   padding: 6px 8px;
   background-color: #fff;
 }
-.header .header-search > button {
+.header-search > button {
   background-color: transparent;
   border: none;
   flex-shrink: 0;
 }
-.header .header-search form {
+.header-search form {
   display: flex;
   width: 50%;
   flex-grow: 1;
 }
-.header .header-search form .form-control {
+.header-search form .form-control {
   background-color: transparent;
   border: none;
 }
-.header .header-search form button {
+.header-search form button {
   border-radius: 50px;
   margin-left: auto;
 }
@@ -223,11 +223,11 @@ span {
 .header .social-links .nav-link:hover svg {
   color: var(--main-color);
 }
-.header .header-auth-buttons {
+.header-auth-buttons {
   display: flex;
   justify-content: end;
 }
-.header .header-auth-buttons a {
+.header-auth-buttons a {
   border-radius: 50px;
   margin-left: 4px;
 }
