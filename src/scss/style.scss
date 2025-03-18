@@ -1,11 +1,12 @@
-// Mixins
-@use './abstracts/mixins';
-
 // Global
 @use './base/global';
+
+// Components
+@use './components/index';
 
 // Header
 @use './vendors/bootstrap';
 
 // Header
 @use './layouts/header';
+@use './layouts/navbar';
