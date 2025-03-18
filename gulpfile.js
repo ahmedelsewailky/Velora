@@ -7,7 +7,7 @@ import fileInclude from "gulp-file-include";
 import autoprefixer from "gulp-autoprefixer";
 import htmlbeautify from "gulp-html-beautify";
 import cleanCSS from "gulp-clean-css";
-import uglify from "gulp-clean-css";
+import uglify from "gulp-uglify";
 import browserSyncPackage from "browser-sync";
 
 const browserSync = browserSyncPackage.create();
@@ -46,7 +46,7 @@ function style() {
         .pipe(sourcemaps.init())
         .pipe(scss({ outputStyle: "expanded" }).on("error", scss.logError))
         .pipe(autoprefixer())
-        .pipe(cleanCSS())  // ✅ ضغط ملفات CSS
+        .pipe(cleanCSS())
         .pipe(sourcemaps.write("."))
         .pipe(dest("docs/assets/css"))
         .pipe(browserSync.stream());
