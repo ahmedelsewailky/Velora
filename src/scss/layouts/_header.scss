@@ -29,6 +29,21 @@
     border-radius: $borderRaduis;
 }
 
+.search-category-list {
+    width: 180px;
+
+    svg {
+        margin-right: 12px;
+        width: 22px;
+    }
+}
+
+@each $name, $color in $colors {
+    .dropdown-item.#{$name} svg {
+        color: $color;
+    }
+}
+
 .header-social-links {
     .nav {justify-content: end;}
     a {
