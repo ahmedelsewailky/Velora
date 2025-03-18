@@ -1,15 +1,3 @@
-.btn, .form-control {
-  font-size: 13px;
-}
-
-.header-search {
-  border: 1px solid #e5e7eb;
-}
-
-.header-logo svg {
-  color: var(--primary-color);
-}
-
 :root {
   --primary-color: #5352ed;
   --primary-hover: rgb(37.0732984293, 35.8062827225, 232.1937172775);
@@ -19,8 +7,8 @@
   --success-hover: rgb(34.8047808765, 173.1952191235, 91.984063745);
   --danger-color: #ff4757;
   --danger-hover: rgb(255, 20, 40.4347826087);
-  --dark-color: #011c1a;
-  --dark-hover: hsl(175.5555555556, 93.1034482759%, -4.3137254902%);
+  --dark-color: #000000;
+  --dark-hover: hsl(0, 0%, -10%);
   --light-color: #a4b0be;
   --light-hover: rgb(134.25, 150.1730769231, 168.75);
   --info-color: #1e90ff;
@@ -28,8 +16,9 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Poppins", "Changa", sans-serif;
+  font-weight: 500;
   background-color: whitesmoke;
 }
 
@@ -52,124 +41,122 @@ span {
   display: inline-block;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  border-radius: 0;
-  font-weight: 500;
+.button {
+  background-color: transparent;
   border: none;
-  padding: 8px 18px;
-  text-transform: uppercase;
-  transition: background 0.3s ease-in-out;
+  padding: 14px 18px;
+  display: inline-flex;
+  align-items: center;
 }
-.btn-primary {
+.button-primary {
   background-color: #5352ed;
   color: white;
 }
-.btn-primary:hover {
+.button-primary:hover {
   color: white;
   background-color: hsl(240.3870967742, 81.1518324607%, -37.4509803922%);
 }
-.btn-gradient-primary {
+.button-gradient-primary {
   background: linear-gradient(180deg, #5352ed, rgb(19.0497382199, 18.0471204188, 173.4528795812));
 }
-.btn-gradient-primary:hover {
+.button-gradient-primary:hover {
   color: white;
   background: linear-gradient(135deg, rgb(128.9267015707, 128.1937172775, 241.8062827225), #5352ed);
 }
-.btn-warning {
+.button-warning {
   background-color: #ff7f50;
   color: white;
 }
-.btn-warning:hover {
+.button-warning:hover {
   color: white;
   background-color: hsl(16.1142857143, 100%, -34.3137254902%);
 }
-.btn-gradient-warning {
+.button-gradient-warning {
   background: linear-gradient(180deg, #ff7f50, rgb(207.5, 55.7285714286, 0));
 }
-.btn-gradient-warning:hover {
+.button-gradient-warning:hover {
   color: white;
   background: linear-gradient(135deg, rgb(255, 164.3028571429, 131), #ff7f50);
 }
-.btn-success {
+.button-success {
   background-color: #2ed573;
   color: white;
 }
-.btn-success:hover {
+.button-success:hover {
   color: white;
   background-color: hsl(144.7904191617, 66.5338645418%, -49.2156862745%);
 }
-.btn-gradient-success {
+.button-gradient-success {
   background: linear-gradient(180deg, #2ed573, rgb(22.0039840637, 109.4960159363, 58.1533864542));
 }
-.btn-gradient-success:hover {
+.button-gradient-success:hover {
   color: white;
   background: linear-gradient(135deg, rgb(88.4661354582, 221.5338645418, 143.4462151394), #2ed573);
 }
-.btn-danger {
+.button-danger {
   background-color: #ff4757;
   color: white;
 }
-.btn-danger:hover {
+.button-danger:hover {
   color: white;
   background-color: hsl(354.7826086957, 100%, -36.0784313725%);
 }
-.btn-gradient-danger {
+.button-gradient-danger {
   background: linear-gradient(180deg, #ff4757, rgb(198.5, 0, 17.2608695652));
 }
-.btn-gradient-danger:hover {
+.button-gradient-danger:hover {
   color: white;
   background: linear-gradient(135deg, rgb(255, 122, 133.5652173913), #ff4757);
 }
-.btn-dark {
-  background-color: #011c1a;
+.button-dark {
+  background-color: #000000;
   color: white;
 }
-.btn-dark:hover {
+.button-dark:hover {
   color: white;
-  background-color: hsl(175.5555555556, 93.1034482759%, -94.3137254902%);
+  background-color: hsl(0, 0%, -100%);
 }
-.btn-gradient-dark {
-  background: linear-gradient(180deg, #011c1a, hsl(175.5555555556, 93.1034482759%, -19.3137254902%));
+.button-gradient-dark {
+  background: linear-gradient(180deg, #000000, hsl(0, 0%, -25%));
 }
-.btn-gradient-dark:hover {
+.button-gradient-dark:hover {
   color: white;
-  background: linear-gradient(135deg, rgb(2.7586206897, 77.2413793103, 71.724137931), #011c1a);
+  background: linear-gradient(135deg, rgb(25.5, 25.5, 25.5), #000000);
 }
-.btn-light {
+.button-light {
   background-color: #a4b0be;
   color: white;
 }
-.btn-light:hover {
+.button-light:hover {
   color: white;
   background-color: hsl(212.3076923077, 16.6666666667%, -30.5882352941%);
 }
-.btn-gradient-light {
+.button-gradient-light {
   background: linear-gradient(180deg, #a4b0be, rgb(94.375, 111.7980769231, 132.125));
 }
-.btn-gradient-light:hover {
+.button-gradient-light:hover {
   color: white;
   background: linear-gradient(135deg, rgb(193.75, 201.8269230769, 211.25), #a4b0be);
 }
-.btn-info {
+.button-info {
   background-color: #1e90ff;
   color: white;
 }
-.btn-info:hover {
+.button-info:hover {
   color: white;
   background-color: hsl(209.6, 100%, -44.1176470588%);
 }
-.btn-gradient-info {
+.button-gradient-info {
   background: linear-gradient(180deg, #1e90ff, rgb(0, 79.8, 157.5));
 }
-.btn-gradient-info:hover {
+.button-gradient-info:hover {
   color: white;
   background: linear-gradient(135deg, rgb(81, 169.16, 255), #1e90ff);
 }
 
 .form-control {
   border-radius: 0;
+  font-size: 15px;
 }
 .form-control:focus {
   outline: none;
@@ -177,7 +164,7 @@ span {
 }
 
 .header {
-  padding: 12px 0;
+  padding: 18px 0;
 }
 .header-logo a {
   text-transform: uppercase;
@@ -186,14 +173,16 @@ span {
   letter-spacing: 0.5px;
 }
 .header-logo svg {
+  color: var(--primary-color);
   width: 40px;
   height: 32px;
 }
 .header-search {
   display: flex;
-  border-radius: 50px;
+  border: 1px solid #e5e7eb;
   padding: 6px 8px;
   background-color: #fff;
+  border-radius: 50px;
 }
 .header-search > button {
   background-color: transparent;
@@ -210,25 +199,38 @@ span {
   border: none;
 }
 .header-search form button {
-  border-radius: 50px;
   margin-left: auto;
-}
-.header .social-links .nav-link {
-  padding: 0;
-  margin: 0 5px;
-}
-.header .social-links .nav-link svg {
-  color: var(--dark-color);
-}
-.header .social-links .nav-link:hover svg {
-  color: var(--main-color);
 }
 .header-auth-buttons {
   display: flex;
   justify-content: end;
 }
 .header-auth-buttons a {
-  border-radius: 50px;
   margin-left: 4px;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+.navbar .nav-link {
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar a.mail, .navbar a.phone {
+  display: block;
+  padding: 15px 12px;
+}
+.navbar .navbar-nav button span {
+  background-color: #00BCD4;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  color: white;
+  right: 10px;
+  top: 11px;
 }
 /*# sourceMappingURL=style.css.map */

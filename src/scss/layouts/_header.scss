@@ -1,7 +1,7 @@
-@use '../abstracts/helpers';
+@use '../abstracts/variables' as *;
 
 .header {
-    padding: 12px 0;
+    padding: 18px 0;
 
     &-logo {
         a {
@@ -10,56 +10,40 @@
             font-size: 24px;
             letter-spacing: 0.5px;
         }
-    
+
         svg {
-            @extend %primary-color;
+            color: var(--primary-color);
             width: 40px;
             height: 32px;
         }
     }
-    
+
     &-search {
         display: flex;
-        @extend %border;
-        border-radius: 50px;
+        border: 1px solid $borderColor;
         padding: 6px 8px;
         background-color: #fff;
-    
-        > button {
+        border-radius: 50px;
+
+        >button {
             background-color: transparent;
             border: none;
             flex-shrink: 0;
         }
-    
+
         form {
             display: flex;
             width: 50%;
             flex-grow: 1;
-    
+
             .form-control {
                 background-color: transparent;
                 border: none;
             }
-    
+
             button {
-                border-radius: 50px;
+
                 margin-left: auto;
-            }
-        }
-    }
-
-    .social-links {
-        .nav-link {
-            padding: 0;
-            margin: 0 5px;
-
-            svg {
-                color: var(--dark-color);
-            }
-            &:hover {
-                svg {
-                    color: var(--main-color);
-                }
             }
         }
     }
@@ -69,7 +53,7 @@
         justify-content: end;
 
         a {
-            border-radius: 50px;
+
             margin-left: 4px;
         }
     }
