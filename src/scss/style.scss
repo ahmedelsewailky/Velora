@@ -4,9 +4,10 @@
 // Components
 @use './components/index';
 
-// Header
+// Vendors
 @use './vendors/bootstrap';
 
-// Header
+// Layouts
 @use './layouts/header';
 @use './layouts/navbar';
+@use './layouts/hero';

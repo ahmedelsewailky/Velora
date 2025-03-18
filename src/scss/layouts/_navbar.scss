@@ -1,20 +1,14 @@
 .navbar {
     background-color: white;
     box-shadow: 0 0 22px rgb(0 0 0 / 10%);
-    padding: 16px 0;
+    padding: 8px 0;
 
     .nav-link {
         font-weight: 600;
-        font-size: 14px;
         text-transform: uppercase;
     }
 
-    a.mail, a.phone {
-        display: block;
-        padding: 15px 12px;
-    }
-
-    .navbar-nav button span {
+    span.count {
         background-color: #00BCD4;
         position: absolute;
         width: 18px;
@@ -24,5 +18,21 @@
         color: white;
         right: 10px;
         top: 11px;
+    }
+
+    .shopping-cart {
+        position: relative;
+    }
+    
+    .shopping-cart span {
+        background-color: var(--primary-color);
+        color: white;
+        position: absolute;
+        width: 16px;
+        border-radius: 50px;
+        height: 16px;
+        font-size: 11px;
+        left: 32px;
+        top: 10px;
     }
 }

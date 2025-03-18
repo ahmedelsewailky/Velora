@@ -12,14 +12,21 @@
 <body>
     <div id="app">
         <div class="app-wrapper">
-            <!-- .header -->
-            @@include('layouts/header.html')
+            <div class="app-header">
+                <!-- .header -->
+                @@include('layouts/header.html')
+    
+                <!-- .navbar --> 
+                @@include('layouts/navbar.html')
+    
+                <!-- .hero -->
+                @@include('layouts/hero.html')
 
-            <!-- .navbar --> 
-            @@include('layouts/navbar.html')
-
-            <!-- .hero -->
-            @@include('layouts/hero.html')
+                <img src="@@BASE_URL/assets/images/abstracts/abstract-dots-1.svg" data-speed="5" class="floating-img dots" alt="Hero image preview">
+                <img src="@@BASE_URL/assets/images/abstracts/abstract-red-plus-1.svg" data-speed="8" class="floating-img red-plus" alt="Hero image preview">
+                <img src="@@BASE_URL/assets/images/abstracts/element-book-1.svg" data-speed="6" class="floating-img book" alt="Hero image preview">
+                <img src="@@BASE_URL/assets/images/abstracts/element-crown-1.svg" data-speed="-4" class="floating-img crown" alt="Hero image preview">
+            </div>
         </div>
     </div>
 

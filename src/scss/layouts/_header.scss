@@ -1,5 +1,11 @@
 @use '../abstracts/variables' as *;
 
+.app-header {
+    background: linear-gradient(45deg,#f2f1e2,#dcecdd);
+    height: 100vh;
+    z-index: 1;
+}
+
 .header {
     padding: 18px 0;
 }
@@ -10,6 +16,7 @@
             weight: 700;
             size: 24px;
         }
+
         letter-spacing: 0.5px;
     }
 
@@ -45,10 +52,14 @@
 }
 
 .header-social-links {
-    .nav {justify-content: end;}
+    .nav {
+        justify-content: end;
+    }
+
     a {
         padding: 0 8px;
     }
+
     svg {
         width: 20px;
         color: var(--dark-color, #000);
@@ -81,7 +92,7 @@
             margin-left: 16px;
 
             img {
-                $avatar-size: 38px; 
+                $avatar-size: 38px;
                 width: $avatar-size;
                 height: $avatar-size;
                 border-radius: 50%;
