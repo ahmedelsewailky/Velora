@@ -1,5 +1,8 @@
 $(function() {
     "use strict";
 
-    console.log("Hello! World");
+    $("[data-bs-toggle='tooltip']").tooltip({
+        trigger: "hover",
+        placement: "bottom"
+    });
 });
