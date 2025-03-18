@@ -1,7 +1,5 @@
 @use '../abstracts/mixins' as *;
 
-@use '../abstracts/helpers';
-
 :root {
     @each $name, $color in $colors {
         --#{$name}-color: #{$color};

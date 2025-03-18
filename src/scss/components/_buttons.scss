@@ -2,31 +2,41 @@
 
 @use '../abstracts/mixins' as *;
 
-// Buttons
-.button {
+button {
     background-color: transparent;
     border: none;
-    padding: 14px 18px;
+}
+
+.button {
     display: inline-flex;
     align-items: center;
+    border-radius: $borderRaduis;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
 
-    @each $name, $color in $colors {
-        &-#{$name} {
-            background-color: $color;
+.button-sm {
+    padding: 10px 16px;
+}
+
+.button-md {
+    padding: 14px 24px;
+}
+
+.button-lg {
+    padding: 18px 32px;
+}
+
+@each $name, $color in $colors {
+    .button-#{$name} {
+        background-color: $color;
+        color: white;
+
+        &:hover {
             color: white;
-            &:hover {
-                color: white;
-                background-color: darken-color($color, 100%);
-            }
-        }
-
-        &-gradient-#{$name} {
-            background: linear-gradient(180deg, $color, color.adjust($color, $lightness: -25%));
-
-            &:hover {
-                color: white;
-                background: linear-gradient(135deg, color.adjust($color, $lightness: 10%), $color);
-            }
+            background-color: color.adjust($color, $lightness: -25%);
         }
     }
 }

@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../abstracts/variables' as *;
 
 // Form Control
@@ -8,5 +9,43 @@
     &:focus {
         outline: none;
         box-shadow: none;
+    }
+}
+
+// Dropdown Menu
+.dropdown-menu {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 17px rgb(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-size: 13px;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0, 0.5);
+
+    &.active,
+    &:active,
+    &:hover {
+        color: #000;
+        padding-left: 1.5rem;
+        background-color: transparent;
+    }
+}
+
+.search-category-list {
+    width: 180px;
+
+    svg {
+        margin-right: 12px;
+        width: 22px;
+    }
+}
+
+@each $name, $color in $colors {
+    .dropdown-item.#{$name} svg {
+        color: $color;
     }
 }

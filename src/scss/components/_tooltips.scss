@@ -1,0 +1,26 @@
+.tooltip-inner {
+    background-color: var(--dark-color);
+    color: white;
+    text-transform: capitalize;
+}
+
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--dark-color);
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--dark-color);
+}
+
+.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: var(--dark-color);
+}
+
+.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: var(--dark-color);
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--dark-color);
+}
