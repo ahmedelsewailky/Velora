@@ -1,5 +1,2 @@
-$(function() {
-    "use strict";
-
-    console.log("Hello! World");
-});
+$(function(){$("[data-bs-toggle='tooltip']").tooltip({trigger:"hover",placement:"bottom"})});
+//# sourceMappingURL=main.js.map
