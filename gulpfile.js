@@ -1,15 +1,16 @@
 import { src, dest, watch, series } from "gulp";
 import concat from "gulp-concat";
-import * as sass from 'sass';
-import gulpSass from 'gulp-sass';
+import * as sass from "sass";
+import gulpSass from "gulp-sass";
 import sourcemaps from "gulp-sourcemaps";
 import fileInclude from "gulp-file-include";
 import autoprefixer from "gulp-autoprefixer";
 import htmlbeautify from "gulp-html-beautify";
+import cleanCSS from "gulp-clean-css";
+import uglify from "gulp-clean-css";
 import browserSyncPackage from "browser-sync";
 
 const browserSync = browserSyncPackage.create();
-
 const scss = gulpSass(sass);
 
 const root = "src";
@@ -22,7 +23,7 @@ const paths = {
     js: `${root}/js/**/*.js`,
     libs: `${root}/libs/**/*.*`,
     images: `${root}/img/**/*.*`
-}
+};
 
 function processHtml(srcPath, destPath) {
     return src(srcPath)
@@ -43,8 +44,9 @@ function html() {
 function style() {
     return src(paths.css)
         .pipe(sourcemaps.init())
-        .pipe(scss({ outputStyle: "compressed" }).on("error", scss.logError))
+        .pipe(scss({ outputStyle: "expanded" }).on("error", scss.logError))
         .pipe(autoprefixer())
+        .pipe(cleanCSS())  // ✅ ضغط ملفات CSS
         .pipe(sourcemaps.write("."))
         .pipe(dest("docs/assets/css"))
         .pipe(browserSync.stream());
@@ -52,7 +54,10 @@ function style() {
 
 function scripts() {
     return src(paths.js)
+        .pipe(sourcemaps.init())
         .pipe(concat("main.js"))
+        .pipe(uglify()) // ✅ ضغط ملفات JavaScript
+        .pipe(sourcemaps.write("."))
         .pipe(dest("docs/assets/js"))
         .pipe(browserSync.stream());
 }
