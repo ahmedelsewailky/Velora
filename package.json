@@ -6,7 +6,7 @@
     "homepage": "https://ahmedelsewailky.github.io/Velora/",
     "type": "module",
     "scripts": {
-        "dev": "cross-env NODE_ENV=development gulp",
+        "dev": "gulp",
         "build": "cross-env NODE_ENV=production gulp"
     },
     "devDependencies": {
