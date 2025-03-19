@@ -59,6 +59,8 @@
 }
 
 .header-social-links {
+    align-self: center;
+
     .nav {
         justify-content: end;
     }
@@ -71,14 +73,22 @@
         width: 20px;
         color: var(--dark-color, #000);
     }
+
+    @media (max-width: 1200px) {
+        & {
+            display: none;
+        }
+    }
 }
 
 .header-auth {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-left: 1px solid rgba(163, 163, 163, 0.5);
+    border-left: 1px solid rgba(163, 163, 163, .5);
     position: relative;
+    margin-left: 12px;
+    padding-left: 42px;
 
     &::after {
         position: absolute;
@@ -122,6 +132,16 @@
                 font-size: 12px;
                 font-weight: 300;
             }
+        }
+    }
+
+    @media (max-width: 1260px) {
+        & {
+            border-left: none;
+        }
+
+        &::after {
+            display: none;
         }
     }
 }

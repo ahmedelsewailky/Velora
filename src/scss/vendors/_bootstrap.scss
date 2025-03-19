@@ -25,7 +25,7 @@
 }
 
 .dropdown-item {
-    font-size: 13px;
+    font-size: $fontSize;
     padding: 8px 16px;
     text-transform: capitalize;
     transition: .3s ease;
@@ -55,4 +55,24 @@
 
 .dropdown:hover .nav-link.dropdown-toggle::after {
     content: "-";
+}
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
