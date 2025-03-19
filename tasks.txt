@@ -2,3 +2,5 @@
 - Sidebar Offcanvas
 - Header Reponsive
 - Header Re-Structure
+- Google Structure Schema
+- اعادة ضبط منظومة الالوان واعدادات السي اس اس

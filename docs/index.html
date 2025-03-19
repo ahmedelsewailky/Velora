@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 
     <!-- Css Files & Libraries -->
-    <link rel="stylesheet" href="/Velora/assets/libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Velora/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
@@ -170,7 +170,7 @@
                                     <div class="header-auth dropdown">
                                         <button type="button" class="auth" data-bs-toggle="dropdown">
                                             <div class="auth-image">
-                                                <img src="/Velora/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
+                                                <img src="/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
                                             </div>
                                         </button>
                                         <ul class="dropdown-menu dropdown-menu-end">
@@ -300,7 +300,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <button type="button" class="button shopping-cart">
+                                    <button type="button" class="button shopping-cart" data-bs-toggle="offcanvas" href="#addToCartCanvas">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                                 <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
@@ -344,7 +344,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="hero-image">
-                                        <img src="/Velora/assets/images/hero-img.png" data-speed="8" class="floating-img" alt="Hero image preview">
+                                        <img src="/assets/images/hero-img.png" data-speed="8" class="floating-img" alt="Hero image preview">
                                     </div>
                                 </div>
                             </div>
@@ -352,18 +352,118 @@
                     </div>
                 </div>
 
-                <img src="/Velora/assets/images/abstracts/abstract-dots-1.svg" data-speed="5" class="floating-img dots" alt="Hero image preview">
-                <img src="/Velora/assets/images/abstracts/abstract-red-plus-1.svg" data-speed="8" class="floating-img red-plus" alt="Hero image preview">
-                <img src="/Velora/assets/images/abstracts/element-book-1.svg" data-speed="6" class="floating-img book" alt="Hero image preview">
-                <img src="/Velora/assets/images/abstracts/element-crown-1.svg" data-speed="-4" class="floating-img crown" alt="Hero image preview">
+                <img src="/assets/images/abstracts/abstract-dots-1.svg" data-speed="5" class="floating-img dots" alt="Hero image preview">
+                <img src="/assets/images/abstracts/abstract-red-plus-1.svg" data-speed="8" class="floating-img red-plus" alt="Hero image preview">
+                <img src="/assets/images/abstracts/element-book-1.svg" data-speed="6" class="floating-img book" alt="Hero image preview">
+                <img src="/assets/images/abstracts/element-crown-1.svg" data-speed="-4" class="floating-img crown" alt="Hero image preview">
             </div>
         </div>
     </div>
 
+
+    <!-- Add To Cart Offcanvas -->
+    <div class="offcanvas offcanvas-cart offcanvas-end" tabindex="-1" id="addToCartCanvas" aria-labelledby="addToCartCanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="addToCartCanvasLabel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path fill="currentColor" d="M19.5 22a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-10 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" />
+                        <path d="M5 4h17l-2 11H7zm0 0c-.167-.667-1-2-3-2m18 13H5.23c-1.784 0-2.73.781-2.73 2s.946 2 2 2H19.5" />
+                    </g>
+                </svg>
+                Your Shopping Cart
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="/assets/images/products/product-1.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-info">
+                        <h6 class="title">Ultimate Digital Marketing Bootcamp</h6>
+                        <div class="price-amount">
+                            <span class="price" data-price="10">10.00</span>$
+                            <div class="quantity-input">
+                                <button type="button" class="decrease">−</button>
+                                <input type="text" class="quantity-value" value="1" min="1">
+                                <button type="button" class="increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="item-remove-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="/assets/images/products/product-2.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-info">
+                        <h6 class="title">AI & Machine Learning Fundamentals</h6>
+                        <div class="price-amount">
+                            <span class="price" data-price="45">45.00</span>$
+                            <div class="quantity-input">
+                                <button type="button" class="decrease">−</button>
+                                <input type="text" class="quantity-value" value="1" min="1">
+                                <button type="button" class="increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="item-remove-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="/assets/images/products/product-3.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-info">
+                        <h6 class="title">Mastering Web Development</h6>
+                        <div class="price-amount">
+                            <span class="price" data-price="75">75.00</span>$
+                            <div class="quantity-input">
+                                <button type="button" class="decrease">−</button>
+                                <input type="text" class="quantity-value" value="1" min="1">
+                                <button type="button" class="increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="item-remove-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas-footer">
+            <p class="subtotal">
+                <span>Subtotal</span>
+                <span class="subtotal-price">$175.00</span>
+            </p>
+            <p class="delivery">
+                <span>Delivery</span>
+                <span class="delivery-price">$10.50</span>
+            </p>
+            <p class="total">
+                <span>Total</span>
+                <span class="total-price">$10.50</span>
+            </p>
+            <button type="button" class="button button-primary w-100 mt-3 justify-content-center">Checkout</button>
+        </div>
+    </div>
     <!-- Javascript Files, Plugins & Libraries -->
-    <script src="/Velora/assets/libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="/Velora/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/Velora/assets/js/main.js"></script>
+    <script src="/assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

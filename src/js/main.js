@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     "use strict";
 
     $("[data-bs-toggle='tooltip']").tooltip({
@@ -12,11 +12,10 @@ $(function() {
 
         $(".floating-img").each(function () {
             let speed = $(this).data("speed");
-            let moveX = (x - 0.5) * speed * 10; 
+            let moveX = (x - 0.5) * speed * 10;
             let moveY = (y - 0.5) * speed * 10;
 
             $(this).css("transform", `translate(${moveX}px, ${moveY}px)`);
         });
     });
-    
 });

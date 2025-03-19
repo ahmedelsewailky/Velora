@@ -1,0 +1,104 @@
+<!-- Add To Cart Offcanvas -->
+<div class="offcanvas offcanvas-cart offcanvas-end" tabindex="-1" id="addToCartCanvas" aria-labelledby="addToCartCanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="addToCartCanvasLabel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path fill="currentColor"
+                        d="M19.5 22a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-10 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" />
+                    <path
+                        d="M5 4h17l-2 11H7zm0 0c-.167-.667-1-2-3-2m18 13H5.23c-1.784 0-2.73.781-2.73 2s.946 2 2 2H19.5" />
+                </g>
+            </svg>
+            Your Shopping Cart
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column">
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="@@BASE_URL/assets/images/products/product-1.jpg" alt="Product Image">
+                </div>
+                <div class="item-info">
+                    <h6 class="title">Ultimate Digital Marketing Bootcamp</h6>
+                    <div class="price-amount">
+                        <span class="price" data-price="10">10.00</span>$
+                        <div class="quantity-input">
+                            <button type="button" class="decrease">−</button>
+                            <input type="text" class="quantity-value" value="1" min="1">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="item-remove-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="@@BASE_URL/assets/images/products/product-2.jpg" alt="Product Image">
+                </div>
+                <div class="item-info">
+                    <h6 class="title">AI & Machine Learning Fundamentals</h6>
+                    <div class="price-amount">
+                        <span class="price" data-price="45">45.00</span>$
+                        <div class="quantity-input">
+                            <button type="button" class="decrease">−</button>
+                            <input type="text" class="quantity-value" value="1" min="1">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="item-remove-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="@@BASE_URL/assets/images/products/product-3.jpg" alt="Product Image">
+                </div>
+                <div class="item-info">
+                    <h6 class="title">Mastering Web Development</h6>
+                    <div class="price-amount">
+                        <span class="price" data-price="75">75.00</span>$
+                        <div class="quantity-input">
+                            <button type="button" class="decrease">−</button>
+                            <input type="text" class="quantity-value" value="1" min="1">
+                            <button type="button" class="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="item-remove-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas-footer">
+        <p class="subtotal">
+            <span>Subtotal</span>
+            <span class="subtotal-price">$175.00</span>
+        </p>
+        <p class="delivery">
+            <span>Delivery</span>
+            <span class="delivery-price">$10.50</span>
+        </p>
+        <p class="total">
+            <span>Total</span>
+            <span class="total-price">$10.50</span>
+        </p>
+        <button type="button" class="button button-primary w-100 mt-3 justify-content-center">Checkout</button>
+    </div>
+</div>
