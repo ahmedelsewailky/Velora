@@ -4,3 +4,9 @@
 - Header Re-Structure
 - Google Structure Schema
 - اعادة ضبط منظومة الالوان واعدادات السي اس اس
+
+- Resturant
+- School
+- Ecommerce
+- Blog
+- Corporate
