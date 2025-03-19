@@ -70,7 +70,7 @@
             padding: 0 16px;
 
             .title {
-                font-size: 14px;
+                font-size: 13px;
                 text-transform: capitalize;
                 font-weight: 600;
                 line-height: 22px;
@@ -83,7 +83,7 @@
             margin-top: 4px;
 
             .price {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 700;
                 margin-right: 4px;
             }
@@ -141,5 +141,31 @@
         &:hover .item-remove-btn {
             display: inline-grid;
         }
+    }
+}
+
+
+.side-canvas-info {
+
+    h6 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    .socials svg {
+        color: var(--dark-color);
+    }
+
+    .contact-info svg {
+        color: var(--primary-color);
+    }
+
+    .subscribe form .form-control {
+        font-size: 13px;
+        line-height: 32px;
+        border-radius: 4px;
+        margin-bottom: 12px;
     }
 }

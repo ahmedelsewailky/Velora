@@ -311,7 +311,7 @@
                                     </button>
                                 </li>
                                 <li class="nav-item">
-                                    <button type="button" class="button sidebar-info-button">
+                                    <button type="button" class="button sidebar-info-button" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
                                         </svg>
@@ -366,7 +366,7 @@
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="addToCartCanvasLabel">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
                         <path fill="currentColor" d="M19.5 22a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-10 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" />
                         <path d="M5 4h17l-2 11H7zm0 0c-.167-.667-1-2-3-2m18 13H5.23c-1.784 0-2.73.781-2.73 2s.946 2 2 2H19.5" />
                     </g>
@@ -458,6 +458,122 @@
                 <span class="total-price">$10.50</span>
             </p>
             <button type="button" class="button button-primary w-100 mt-3 justify-content-center">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Sidebar Canvas Informations -->
+    <div class="offcanvas side-canvas-info offcanvas-end" tabindex="-1" id="sideCanvasInfo" aria-labelledby="sideCanvasInfoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sideCanvasInfoLabel">
+                <div class="header-logo">
+                    <a href="/" title="Velora">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" color="currentColor">
+                                <path d="M6.514 2c-1.304.129-2.182.419-2.838 1.076c-1.175 1.177-1.175 3.072-1.175 6.863v4.02c0 3.79 0 5.686 1.175 6.864S6.743 22 10.526 22h2.007c3.783 0 5.675 0 6.85-1.177c1.067-1.07 1.166-2.717 1.175-5.846" />
+                                <path d="m10.526 7l1.003 3.5c.56 1.11 1.263 1.4 3.01 1.5c1.389-.034 2.195-.198 2.883-.796c.469-.408.681-1.023.784-1.635L18.55 7.5m2.508-2v5M8.601 4.933c1.587-1.317 3.001-2.024 5.934-2.802a1.94 1.94 0 0 1 1.009.005c2.596.714 3.998 1.348 5.876 2.758c.08.06.104.172.048.255c-.613.902-1.982 1.633-5.34 2.935a2.98 2.98 0 0 1-2.171-.012c-3.576-1.42-5.22-2.18-5.42-2.969a.17.17 0 0 1 .064-.17" />
+                            </g>
+                        </svg>
+                        <span>Velora</span>
+                    </a>
+                </div>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column justify-content-around">
+            <div class="socials border-bottom pb-4 ">
+                <h6>Keep In Touch:</h6>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="https://facebook.com/ahmedelsewailky" target="_blank" rel="noopener" class="nav-link" data-bs-toggle="tooltip" title="facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 896 1664">
+                                <path fill="currentColor" d="M895 12v264H738q-86 0-116 36t-30 108v189h293l-39 296H592v759H286V905H31V609h255V391q0-186 104-288.5T667 0q147 0 228 12" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com/elsewailky" target="_blank" rel="noopener" class="nav-link" data-bs-toggle="tooltip" title="twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M22 5.796a8.2 8.2 0 0 1-2.357.646a4.12 4.12 0 0 0 1.805-2.27a8.2 8.2 0 0 1-2.606.996a4.105 4.105 0 0 0-7.097 2.808a4.2 4.2 0 0 0 .105.935a11.65 11.65 0 0 1-8.456-4.287a4.107 4.107 0 0 0 1.27 5.478a4.1 4.1 0 0 1-1.86-.513v.052a4.105 4.105 0 0 0 3.292 4.023a4 4 0 0 1-1.081.143a4 4 0 0 1-.773-.072a4.11 4.11 0 0 0 3.832 2.85A8.26 8.26 0 0 1 2 18.282a11.6 11.6 0 0 0 6.29 1.844A11.594 11.594 0 0 0 19.962 8.453q0-.267-.013-.53A8.4 8.4 0 0 0 22 5.796" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/ahmedelsewailky" target="_blank" rel="noopener" class="nav-link" data-bs-toggle="tooltip" title="github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor" d="M6.315 6.176c-.25-.638-.24-1.367-.129-2.034a6.8 6.8 0 0 1 2.12 1.07c.28.214.647.283.989.18A9.3 9.3 0 0 1 12 5c.961 0 1.874.14 2.703.391c.342.104.709.034.988-.18a6.8 6.8 0 0 1 2.119-1.07c.111.667.12 1.396-.128 2.033c-.15.384-.075.826.208 1.14C18.614 8.117 19 9.04 19 10c0 2.114-1.97 4.187-5.134 4.818c-.792.158-1.101 1.155-.495 1.726c.389.366.629.882.629 1.456v3a1 1 0 0 0 2 0v-3c0-.57-.12-1.112-.334-1.603C18.683 15.35 21 12.993 21 10c0-1.347-.484-2.585-1.287-3.622c.21-.82.191-1.646.111-2.28c-.071-.568-.17-1.312-.57-1.756c-.595-.659-1.58-.271-2.28-.032a9 9 0 0 0-2.125 1.045A11.4 11.4 0 0 0 12 3c-.994 0-1.953.125-2.851.356a9 9 0 0 0-2.125-1.045c-.7-.24-1.686-.628-2.281.031c-.408.452-.493 1.137-.566 1.719l-.005.038c-.08.635-.098 1.462.112 2.283C3.484 7.418 3 8.654 3 10c0 2.992 2.317 5.35 5.334 6.397A4 4 0 0 0 8 17.98l-.168.034c-.717.099-1.176.01-1.488-.122c-.76-.322-1.152-1.133-1.63-1.753c-.298-.385-.732-.866-1.398-1.088a1 1 0 0 0-.632 1.898c.558.186.944 1.142 1.298 1.566c.373.448.869.916 1.58 1.218c.682.29 1.483.393 2.438.276V21a1 1 0 0 0 2 0v-3c0-.574.24-1.09.629-1.456c.607-.572.297-1.568-.495-1.726C6.969 14.187 5 12.114 5 10c0-.958.385-1.881 1.108-2.684c.283-.314.357-.756.207-1.14" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://pinterest.com" target="_blank" rel="noopener" class="nav-link" data-bs-toggle="tooltip" title="pinterest">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 5.789 7.877a9.2 9.2 0 0 0 1-2.128l.516-1.977a2.23 2.23 0 0 0 1.906.95c2.535 0 4.317-2.304 4.317-5.166c0-2.749-2.245-4.803-5.124-4.803c-3.587 0-5.492 2.41-5.492 5.029c0 1.223.647 2.737 1.686 3.224c.154.071.255 0 .279-.113s.166-.682.231-.944a.26.26 0 0 0-.059-.237a3.2 3.2 0 0 1-.594-1.894a3.6 3.6 0 0 1 3.753-3.61a3.283 3.283 0 0 1 3.473 3.384c0 2.244-1.14 3.806-2.612 3.806a1.188 1.188 0 0 1-1.235-1.502c.084-.35.196-.711.304-1.063c.197-.638.385-1.245.385-1.704a1.046 1.046 0 0 0-1.051-1.188c-.832 0-1.503.867-1.503 2.019c-.006.407.07.811.226 1.188l-.98 4.156a7.9 7.9 0 0 0 0 2.37a8.2 8.2 0 0 1-1.818-1.002a8.3 8.3 0 0 1-2.964-4.027A8.2 8.2 0 0 1 3.75 12" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-info border-bottom pb-4 ">
+                <h6>Contacts Us:</h6>
+
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2m10 3a2 2 0 0 1 2 2m-2-6a6 6 0 0 1 6 6" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <span class="d-block small text-muted mb-1">24/7 Support</span>
+                        <a href="tel:+201080720455" class="fw-semibold">(+2)010 80 720 455</a>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m7 9l5 3.5L17 9" />
+                                <path d="M2 17V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <span class="d-block small text-muted mb-1">Send Message</span>
+                        <a href="mailto:ahmed.elsewailky@gmail.com" class="fw-semibold">ahmed.elsewailky@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-width="1" d="M3 8.71c0-1.474 0-2.21.393-2.64a1.5 1.5 0 0 1 .497-.36c.532-.236 1.231-.003 2.629.463c1.067.356 1.6.534 2.14.515a3 3 0 0 0 .588-.078c.525-.125.993-.437 1.929-1.06l1.382-.922c1.2-.8 1.799-1.2 2.487-1.291c.688-.093 1.372.135 2.739.591l1.165.388c.99.33 1.485.495 1.768.888S21 6.12 21 7.162v8.129c0 1.473 0 2.21-.393 2.64a1.5 1.5 0 0 1-.497.358c-.532.237-1.231.004-2.629-.462c-1.067-.356-1.6-.534-2.14-.515a3 3 0 0 0-.588.078c-.525.125-.993.437-1.929 1.06l-1.382.922c-1.2.8-1.799 1.2-2.487 1.291c-.688.093-1.372-.135-2.739-.591l-1.165-.388c-.99-.33-1.485-.495-1.768-.888S3 17.88 3 16.838zm6-2.071V20.5M15 3v14" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <span class="d-block small text-muted mb-1">Our Locati0n</span>
+                        <p class="fw-semibold">23 Naser City, Cairo, Egypt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe">
+                <h6>Subscribe Now</h6>
+                <form action="/" method="get" class="text-center">
+                    <input type="email" class="form-control" placeholder="Enter your mail">
+                    <button type="button" class="button button-primary w-100 justify-content-center">Subscribe
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" d="m14 16l4-4m0 0l-4-4m4 4H6" />
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Javascript Files, Plugins & Libraries -->
