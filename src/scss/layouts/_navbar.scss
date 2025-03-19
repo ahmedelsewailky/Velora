@@ -11,6 +11,7 @@
         transform: translateY(10px);
         visibility: hidden;
         opacity: 0;
+        padding: 1rem;
     }
 
     .dropdown:hover > .dropdown-menu {
@@ -52,5 +53,11 @@
         font-size: 11px;
         left: 32px;
         top: 10px;
+    }
+
+    @media (max-width: 1024px) {
+        .phone, .mail {
+            display: none;
+        }
     }
 }

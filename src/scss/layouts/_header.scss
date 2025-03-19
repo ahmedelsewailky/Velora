@@ -81,67 +81,10 @@
     }
 }
 
-.header-auth {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    border-left: 1px solid rgba(163, 163, 163, .5);
-    position: relative;
-    margin-left: 12px;
-    padding-left: 42px;
-
-    &::after {
-        position: absolute;
-        content: '';
-        border: 4px solid;
-        border-color: rgb(29, 29, 29) transparent transparent;
-        left: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .auth {
-        display: flex;
-        align-items: center;
-
-        .auth-image {
-            flex-shrink: 0;
-            margin-left: 16px;
-
-            img {
-                $avatar-size: 38px;
-                width: $avatar-size;
-                height: $avatar-size;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-        }
-
-        .auth-info {
-            flex-grow: 1;
-            font-size: 13px;
-            text-align: right;
-
-            h6 {
-                font-size: 15px;
-                margin-bottom: 4px;
-                text-transform: capitalize;
-            }
-
-            span {
-                font-size: 12px;
-                font-weight: 300;
-            }
-        }
-    }
-
-    @media (max-width: 1260px) {
-        & {
-            border-left: none;
-        }
-
-        &::after {
-            display: none;
-        }
-    }
+.auth img {
+    $avatar-size: 38px;
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: 50%;
+    object-fit: cover;
 }
