@@ -29,10 +29,9 @@
     padding: 8px 16px;
     text-transform: capitalize;
     transition: .3s ease;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .8);
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     &.active,
     &:active,

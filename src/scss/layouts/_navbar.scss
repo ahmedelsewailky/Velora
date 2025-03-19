@@ -1,7 +1,9 @@
 .navbar {
-    background-color: white;
-    box-shadow: 0 0 22px rgb(0 0 0 / 10%);
-    padding: 8px 0;
+    .navbar-collapse {
+        background-color: #fff;
+        box-shadow: 0 0 22px rgba(0,0,0,.1);
+        padding: 8px 12px;
+    }
 
     .dropdown-menu {
         display: block;
