@@ -15,10 +15,16 @@
     line-height: 32px;
 }
 
-.hero-text h2 span {
+.hero-text h2 span:first-of-type {
     background-color: var(--warning-color);
     color: white;
     padding: 0 8px;
+}
+
+.hero-text h2 span#changing-text {
+    font-weight: 300;
+    display: block;
+    height: 76px;
 }
 
 .hero-image {
@@ -44,6 +50,10 @@
     right: 0;
     z-index: -1;
     top: 0;
+}
+
+.typed-cursor {
+    display: none;
 }
 
 .floating-img {
