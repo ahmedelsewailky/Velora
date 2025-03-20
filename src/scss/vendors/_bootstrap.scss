@@ -57,16 +57,6 @@
     justify-content: space-between;
 }
 
-.nav-link.dropdown-toggle::after {
-    content: "+";
-    border: none;
-    vertical-align: baseline;
-    margin-left: 8px;
-}
-
-.dropdown:hover .nav-link.dropdown-toggle::after {
-    content: "-";
-}
 
 @media (max-width: 1366px) {
     .container {
