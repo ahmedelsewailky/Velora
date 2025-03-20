@@ -1,14 +1,8 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryNavbarMenu"
-            aria-controls="primaryNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-start offcanvas-navbar-inner" tabindex="-1" id="primaryNavbarMenu"
-            aria-labelledby="primaryNavbarMenuLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarMainMenu" aria-labelledby="navbarMainMenuLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                @@include('components/logo.html')
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -18,14 +12,20 @@
                             aria-expanded="false">Home</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-heading">
-                                <span class="back-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24">
+                                <span class="btn-back">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
                                     </svg>
                                 </span>
-                                Back
+                                <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                                            d="m7.757 16.243l8.486-8.486m0 8.486L7.757 7.757" />
+                                    </svg>
+                                </button>
                             </li>
                             <li><a class="dropdown-item active" aria-current="page" href="/">Home One</a></li>
                             <li><a class="dropdown-item" href="html/index-2.html">Home Two</a></li>
@@ -37,6 +37,22 @@
                         <a class="nav-link dropdown-toggle" href="html/courses-1.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
                         <ul class="dropdown-menu">
+                            <li class="dropdown-menu-heading">
+                                <span class="btn-back">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
+                                    </svg>
+                                </span>
+                                <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                                            d="m7.757 16.243l8.486-8.486m0 8.486L7.757 7.757" />
+                                    </svg>
+                                </button>
+                            </li>
                             <li><a class="dropdown-item" href="html/courses-1.html">Course One</a></li>
                             <li><a class="dropdown-item" href="html/courses-2.html">Course Two</a></li>
                             <li><a class="dropdown-item" href="html/courses-3.html">Course Three</a></li>
@@ -47,10 +63,44 @@
                         <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
                         <ul class="dropdown-menu">
+                            <li class="dropdown-menu-heading">
+                                <span class="btn-back">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
+                                    </svg>
+                                </span>
+                                <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                                            d="m7.757 16.243l8.486-8.486m0 8.486L7.757 7.757" />
+                                    </svg>
+                                </button>
+                            </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button"
+                                <a class="dropdown-item dropdown-toggle sub-dropdown-toggle" href="javascript:void(0)" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                                 <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-heading">
+                                        <span class="btn-back">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
+                                            </svg>
+                                        </span>
+                                        <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas"
+                                            aria-label="Close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                                                    d="m7.757 16.243l8.486-8.486m0 8.486L7.757 7.757" />
+                                            </svg>
+                                        </button>
+                                    </li>
                                     <li><a class="dropdown-item" href="">Products</a></li>
                                     <li><a class="dropdown-item" href="">Product Details</a></li>
                                     <li><a class="dropdown-item" href="">Product Cart</a></li>
@@ -62,14 +112,22 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">Teacher</a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-heading">
-                                        <span class="back-btn">
+                                        <span class="btn-back">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24">
                                                 <path fill="currentColor"
                                                     d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
                                             </svg>
                                         </span>
-                                        Back
+                                        <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas"
+                                            aria-label="Close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                                                    d="m7.757 16.243l8.486-8.486m0 8.486L7.757 7.757" />
+                                            </svg>
+                                        </button>
                                     </li>
                                     <li><a class="dropdown-item" href="">Teachers</a></li>
                                     <li><a class="dropdown-item" href="">Teacher Details</a></li>
@@ -86,15 +144,20 @@
                             data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-heading">
-                                <span class="back-btn">
+                                <span class="btn-back">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
                                     </svg>
                                 </span>
-                                <span class="ms-2">Back</span>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
+                                <button type="button" class="btn-close-canvas" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                                            d="m7.757 16.243l8.486-8.486m0 8.486L7.757 7.757" />
+                                    </svg>
+                                </button>
                             </li>
                             <li><a class="dropdown-item" href="html/blog.html">Blog</a></li>
                             <li><a class="dropdown-item" href="html/blog-details.html">Blog Details</a></li>

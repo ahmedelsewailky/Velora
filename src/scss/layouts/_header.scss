@@ -15,6 +15,10 @@
 
 .header {
     padding: 18px 0;
+
+    .navbar-toggler {
+        width: 44px;
+    }
 }
 
 .header-logo {
@@ -87,4 +91,48 @@
     height: $avatar-size;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.auth-info {
+    text-align: right;
+    padding-right: 16px;
+    font-size: 12px;
+}
+
+button.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth-info h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.header-right button {
+    padding: 0 10px;
+    position: relative;
+}
+
+.header-right .shopping-cart span {
+    background-color: #E91E63;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    font-size: 10px;
+    color: #fff;
+    right: 7px;
+    top: 6px;
+}
+
+@media (max-width: 992px) {
+    .header-inner-wrap {
+        // border: 1px solid;
+        border-radius: 5px;
+        padding: 12px 8px;
+        // box-shadow: 0px 5px;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 }

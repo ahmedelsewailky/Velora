@@ -89,6 +89,16 @@
             }
         }
 
+        @media (max-width: 992px) {
+            .price-amount {
+                display: block;
+    
+                .price {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+
         .quantity-input {
             border: 1px solid #e5e7eb;
             border-radius: 50px;

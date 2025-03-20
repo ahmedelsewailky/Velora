@@ -82,3 +82,92 @@ img.floating-img.dots {
     top: 180px;
     right: 30px;
 }
+
+
+
+@media (max-width: 992px) {
+    .app-header {
+        position: relative;
+        height: 100vh;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .hero-section {
+        padding: 24px 0;
+    }
+
+    .hero-text h2 span#changing-text {
+        font-weight: 300;
+        display: inline-block;
+        height: auto;
+    }
+
+    .hero-image::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 320px;
+    }
+
+    .hero-image img {
+        height: 340px;
+        top: -50px;
+    }
+
+    .hero-text .button {
+        border-radius: 50px;
+        padding: 9px 22px;
+    }
+
+    .hero-text .button span {
+        display: inline-grid;
+        place-content: center;
+        background-color: white;
+        border-radius: 50px;
+        margin-right: 8px;
+        width: 36px;
+        height: 36px;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        transition: 0.3s;
+    }
+
+    .hero-text .button span svg {
+        color: var(--primary-color);
+    }
+
+    .hero-text .button:hover span {
+        width: 36px;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hero-text .button:hover {
+        background-color: var(--primary-color);
+    }
+
+    img.floating-img.dots {
+        top: 43%;
+        right: 30px;
+    }
+
+    img.floating-img.crown {
+        top: 70%;
+        right: 16%;
+        z-index: 1;
+    }
+
+    img.floating-img.book {
+        left: 14%;
+        bottom: 11%;
+        z-index: 9;
+    }
+}

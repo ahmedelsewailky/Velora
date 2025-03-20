@@ -1,6 +1,5 @@
 $(function () {
     "use strict";
-
     $("[data-bs-toggle='tooltip']").tooltip({
         trigger: "hover",
         placement: "bottom"
@@ -18,4 +17,19 @@ $(function () {
             $(this).css("transform", `translate(${moveX}px, ${moveY}px)`);
         });
     });
+
+
+
+    $(".dropdown-menu .dropdown-toggle").on("click", function (e) {
+        e.stopPropagation();
+
+        $(this).next(".dropdown-menu").addClass("show");
+    });
+
+    $(".btn-back").on("click", function (e) {
+        e.stopPropagation();
+
+        $(".dropdown-menu.show").last().removeClass("show");
+    });
+
 });

@@ -3,12 +3,19 @@
         <div class="header-inner-wrap">
             <div class="row">
                 <!-- 1- Logo -->
-                <div class="col-lg-2 align-self-center">
+                <div class="header-left col col-lg-2 d-flex align-self-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarMainMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 6.5h15M4.5 12h15m-15 5.5h15" />
+                        </svg>
+                    </button>
+
                     @@include('components/logo.html')
                 </div>
 
                 <!-- 2- Search Area -->
-                <div class="col-lg-6 align-self-center">
+                <div class="header-middle d-none d-lg-block col-lg-6 align-self-center">
                     <div class="header-search-area">
                         <div class="search-category dropdown">
                             <button type="button" class="search-category-button d-flex px-3 align-items-center"
@@ -125,13 +132,38 @@
                 </div>
 
                 <!-- 3- Social Links -->
-                <div class="col-lg-4 align-self-center d-flex justify-content-end">
+                <div class="header-right col col-lg-4 align-self-center d-flex justify-content-end">
                     <div class="header-social-links">
                         @@include('components/socials.html')
                     </div>
 
+                    <button type="button" class="button shopping-cart" data-bs-toggle="offcanvas"
+                        href="#addToCartCanvas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5">
+                                <path
+                                    d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
+                                <path d="M9 11V6a3 3 0 0 1 6 0v5" />
+                            </g>
+                        </svg>
+                        <span>3</span>
+                    </button>
+
+                    <button type="button" class="button sidebar-info-button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sideCanvasInfo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
+                        </svg>
+                    </button>
+
                     <div class="header-auth dropdown">
                         <button type="button" class="auth" data-bs-toggle="dropdown">
+                            <!-- <div class="auth-info">
+                                <h6>A. Elsewailky</h6>
+                                <span>Fullstack</span>
+                            </div> -->
                             <div class="auth-image">
                                 <img src="@@BASE_URL/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
                             </div>
@@ -139,7 +171,8 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                                 <a href="#" class="dropdown-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2"
+                                        viewBox="0 0 24 24">
                                         <g fill="none" stroke="currentColor" stroke-width="1.5">
                                             <path stroke-linejoin="round"
                                                 d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" />
@@ -151,7 +184,8 @@
                             </li>
                             <li>
                                 <a href="#" class="dropdown-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2"
+                                        viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2m6 3V10H6v10zm0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3" />
                                     </svg>
@@ -160,7 +194,8 @@
                             </li>
                             <li>
                                 <a href="#" class="dropdown-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2"
+                                        viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="m21.207 11.793l-5.914 5.914l-1.414-1.414l3.5-3.5H7.793v-2h9.586l-3.5-3.5l1.414-1.414zm-11.414-7.5h-5v15h5v2h-7v-19h7z" />
                                     </svg>
