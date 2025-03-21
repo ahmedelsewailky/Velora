@@ -25,14 +25,10 @@
 
     .dropdown-menu {
         opacity: 0;
-        border: none;
         padding: 16px;
         display: block;
-        border-radius: .25rem;
-        font-size: inherit;
         visibility: hidden;
         transform: translateY(.625rem);
-        box-shadow: 0 0 1.0625rem rgba(0, 0, 0, 0.1);
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
         .dropdown-menu {

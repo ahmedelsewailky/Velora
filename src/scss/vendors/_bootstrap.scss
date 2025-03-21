@@ -12,6 +12,14 @@
     }
 }
 
+.dropdown-menu {
+    font-size: inherit;
+    border: none {
+        radius: .25rem;
+    };
+    box-shadow: 0 0 1.0625rem rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 1366px) {
     .container {
         max-width: 1320px;
