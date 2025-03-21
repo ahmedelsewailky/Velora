@@ -1,18 +1,29 @@
+@use 'sass:color';
 @use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
 
 :root {
     @each $name, $color in $colors {
         --#{$name}-color: #{$color};
-        --#{$name}-hover: #{darken-color($color, 10%)};
+        --#{$name}-rgb-color: #{color.channel($color, "red")}, 
+                              #{color.channel($color, "green")}, 
+                              #{color.channel($color, "blue")};
     }
+    $main: 'orange';
+    --main-color: var(--#{$main}-color);
+    --main-rgb-color: var(--#{$main}-rgb-color);
+    --text-main-color: var(--#{$main}-color);
+    --border-radius-size: 4px;
+    --border-color: #CBD5E1;
 }
 
 body {
     font: {
-        size: $fontSize;
+        size: 13px;
         family: "Poppins", "Changa", sans-serif;
         weight: 500;
     }
+    color: var(--dark-color);
     background-color: whitesmoke;
 }
 
@@ -35,3 +46,7 @@ span {
     display: inline-block;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}

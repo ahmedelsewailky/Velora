@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 
     <!-- Css Files & Libraries -->
-    <link rel="stylesheet" href="/Velora/assets/libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Velora/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
@@ -22,11 +22,11 @@
         <div class="container">
             <header class="header">
                 <div class="container">
-                    <div class="header-inner-wrap">
+                    <div class="inner-wrap">
                         <div class="row">
-                            <!-- 1- Logo -->
-                            <div class="header-left col col-lg-2 d-flex align-self-center">
-                                <div class="header-logo">
+                            <!-- Left -->
+                            <div class="col col-lg-2 d-flex align-self-center">
+                                <div class="logo">
                                     <a href="/" title="Velora">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" color="currentColor">
@@ -39,12 +39,12 @@
                                 </div>
                             </div>
 
-                            <!-- 2- Search Area -->
-                            <div class="header-middle d-none d-lg-block col-lg-6 align-self-center">
-                                <div class="header-search-area">
+                            <!-- Middle -->
+                            <div class="d-none d-lg-block col-lg-6 align-self-center">
+                                <div class="search">
                                     <div class="search-category dropdown">
-                                        <button type="button" class="search-category-button d-flex px-3 align-items-center" data-bs-toggle="dropdown">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2 text-warning" viewBox="0 0 24 24">
+                                        <button type="button" class="button" data-bs-toggle="dropdown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                     <circle cx="17" cy="7" r="3" />
                                                     <circle cx="7" cy="17" r="3" />
@@ -58,9 +58,9 @@
                                             </svg>
                                         </button>
 
-                                        <ul class="search-category-list dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="javascript:void(0)" class="dropdown-item primary">
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item primary">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <g fill="currentColor">
                                                             <path d="M14 11h-4v2h4z" />
@@ -69,7 +69,9 @@
                                                     </svg>
                                                     Business
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item warning">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item amber">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                             <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3" />
@@ -78,7 +80,9 @@
                                                     </svg>
                                                     Marketing
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item success">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item amerald">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                             <path d="m17.674 11.408l-1.905 5.715a.6.6 0 0 1-.398.386L3.693 20.98a.6.6 0 0 1-.74-.765L6.745 8.841a.6.6 0 0 1 .34-.365l5.387-2.218a.6.6 0 0 1 .653.13l4.404 4.406a.6.6 0 0 1 .145.614M3.296 20.602l6.364-6.364" />
@@ -87,25 +91,33 @@
                                                     </svg>
                                                     Design
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item danger">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item red">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <path fill="currentColor" d="m6 16.5l-3 2.94V11h3m5 3.66l-1.57-1.34L8 14.64V7h3m5 6l-3 3V3h3m2.81 9.81L17 11h5v5l-1.79-1.79L13 21.36l-3.47-3.02L5.75 22H3l6.47-6.34L13 18.64" />
                                                     </svg>
                                                     Finance
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item dark">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item dark">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <path fill="currentColor" d="M12 20.02q-.238 0-.478-.096q-.24-.095-.41-.286l-6.316-6.34q-.875-.875-1.336-1.971Q3 10.231 3 9.083Q3 6.93 4.348 5.427t3.31-1.504q1.026 0 1.974.427q.947.427 1.695 1.2l.673.712l.635-.673q.761-.812 1.718-1.239t1.964-.427q1.962 0 3.323 1.504T21 9.057q0 1.168-.463 2.264q-.464 1.096-1.333 1.971l-6.34 6.347q-.191.19-.408.285t-.456.095M13 8.5q.135 0 .244.058q.11.058.177.161l1.835 2.781h4.073q.348-.579.522-1.199t.155-1.243q-.031-1.725-1.093-2.924q-1.061-1.2-2.596-1.2q-.813 0-1.583.33q-.77.328-1.334.961l-.906.975q-.105.13-.228.18T12 7.429t-.275-.059t-.244-.17l-.906-.975q-.563-.633-1.33-.967q-.768-.335-1.587-.335q-1.535 0-2.596 1.205T4 9.058q0 .642.171 1.253t.5 1.189H9q.135 0 .235.058t.167.161l1.452 2.166l1.677-5.031q.061-.165.18-.26T13 8.5m.146 1.616l-1.677 5.03q-.061.166-.192.26t-.302.094q-.134 0-.234-.058t-.168-.161L8.719 12.5h-3.3l6.406 6.425q.05.05.088.063T12 19t.088-.012t.087-.063l6.4-6.425H15q-.134 0-.244-.067t-.183-.171z" />
                                                     </svg>
                                                     Lifestyle
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item light">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item light">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <path fill="currentColor" d="M18.918 17.48c-.126 2.727-2.384 4.696-5.364 4.696H7.34v-6.123l-2.185-.957V24h8.381c4.334 0 7.549-2.962 7.549-6.881v-.163c-.65.235-1.372.415-2.167.524m1.355-9.501C18.611 4.313 17.726.989 15.432.213c-1.336-.452-2.005-.091-2.637.217a.306.306 0 0 0-.072.505c.361.307.813.687 1.336 1.174c-1.95-1.138-7.333-2.835-7.874-.776c-.488 1.86-1.319 4.587-1.319 4.587S.603 5.487.116 7.293s3.323 5.274 9.627 7.134c6.303 1.861 11.198 1.373 13.311-.921s.072-5.473-2.781-5.527m-1.247.036c-.487.47-2.077 1.68-5.563 1.427c-3.738-.271-6.809-2.474-7.604-3.088a.34.34 0 0 1-.126-.398c.054-.18.126-.469.253-.849c.072-.234.343-.343.542-.216c1.571.903 4.1 2.221 6.791 2.402c2.402.163 3.847-.542 4.786-1.066a.39.39 0 0 1 .542.199l.47 1.156c.036.162.018.325-.091.433" />
                                                     </svg>
                                                     Cyber
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item info">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item cyan">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                                                         <path fill="currentColor" d="M9.905 2.815a.75.75 0 0 1 .38.99l-4 9a.75.75 0 1 1-1.37-.61l4-9a.75.75 0 0 1 .99-.38M4.498 5.19a.75.75 0 0 1 .063 1.058L3.003 8l1.558 1.752a.75.75 0 1 1-1.122.996l-2-2.25a.75.75 0 0 1 0-.996l2-2.25A.75.75 0 0 1 4.5 5.19m7.004 0a.75.75 0 0 1 1.059.062l2 2.25a.75.75 0 0 1 0 .996l-2 2.25a.75.75 0 0 1-1.122-.996L12.996 8L11.44 6.248a.75.75 0 0 1 .063-1.058" />
                                                     </svg>
@@ -117,7 +129,7 @@
 
                                     <form action="/" method="get" class="search-form d-flex w-100">
                                         <input type="text" class="form-control border-0" name="search" placeholder="Search your course">
-                                        <button type="button" class="button button-sm button-success">
+                                        <button type="button" class="button button-main">
                                             Search
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="ms-2">
                                                 <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
@@ -127,9 +139,9 @@
                                 </div>
                             </div>
 
-                            <!-- 3- Social Links -->
-                            <div class="header-right col col-lg-4 align-self-center d-flex justify-content-end">
-                                <div class="header-social-links">
+                            <!-- Right -->
+                            <div class="col col-lg-4 align-self-center justify-content-end justify-content-lg-start d-flex">
+                                <div class="social-links">
                                     <ul class="nav">
                                         <li class="nav-item">
                                             <a href="https://facebook.com/ahmedelsewailky" target="_blank" rel="noopener" class="nav-link" data-bs-toggle="tooltip" title="facebook">
@@ -175,54 +187,31 @@
                                     <span>3</span>
                                 </button>
 
-                                <button type="button" class="button sidebar-info-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
+                                <button type="button" class="button sidebar-cyan-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#contactInfoCanvas">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" d="M12.002 1.999c5.523 0 10.001 4.478 10.001 10.002c0 5.523-4.478 10.001-10.001 10.001C6.478 22.002 2 17.524 2 12.001C2 6.477 6.478 1.999 12.002 1.999m0 1.5a8.502 8.502 0 1 0 0 17.003a8.502 8.502 0 0 0 0-17.003M12 10.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75M12 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
                                     </svg>
                                 </button>
 
-                                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
+                                <button type="button" class="navbar-toggler d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
                                     </svg>
                                 </button>
 
-                                <div class="header-auth dropdown">
-                                    <button type="button" class="auth" data-bs-toggle="dropdown">
-                                        <div class="auth-image">
-                                            <img src="/Velora/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
-                                        </div>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li>
-                                            <a href="#" class="dropdown-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linejoin="round" d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" />
-                                                        <circle cx="12" cy="7" r="3" />
-                                                    </g>
-                                                </svg>
-                                                Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2m6 3V10H6v10zm0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3" />
-                                                </svg>
-                                                Password
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="m21.207 11.793l-5.914 5.914l-1.414-1.414l3.5-3.5H7.793v-2h9.586l-3.5-3.5l1.414-1.414zm-11.414-7.5h-5v15h5v2h-7v-19h7z" />
-                                                </svg>
-                                                Logout
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="html/register.html" class="button button-dark d-none d-lg-flex ms-auto me-2" role="button">
+                                    Register
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="ms-2" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M15 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m0 1.9a2.1 2.1 0 1 1 0 4.2A2.1 2.1 0 0 1 12.9 8A2.1 2.1 0 0 1 15 5.9M4 7v3H1v2h3v3h2v-3h3v-2H6V7zm11 6c-2.67 0-8 1.33-8 4v3h16v-3c0-2.67-5.33-4-8-4m0 1.9c2.97 0 6.1 1.46 6.1 2.1v1.1H8.9V17c0-.64 3.1-2.1 6.1-2.1" />
+                                    </svg>
+                                </a>
+
+                                <a href="html/login.html" class="button button-outline-dark d-none d-lg-flex" role="button">
+                                    Login
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="ms-2" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2m-8 0V7a4 4 0 0 1 4-4v0a4 4 0 0 1 4 4v3m-8 0h8m-4 4v3" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -234,11 +223,11 @@
 
             <header class="header">
                 <div class="container">
-                    <div class="header-inner-wrap">
+                    <div class="inner-wrap">
                         <div class="row">
-                            <!-- 1- Logo -->
-                            <div class="header-left col col-lg-2 d-flex align-self-center">
-                                <div class="header-logo">
+                            <!-- Left -->
+                            <div class="col col-lg-2 d-flex align-self-center">
+                                <div class="logo">
                                     <a href="/" title="Velora">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" color="currentColor">
@@ -251,12 +240,12 @@
                                 </div>
                             </div>
 
-                            <!-- 2- Search Area -->
-                            <div class="header-middle d-none d-lg-block col-lg-6 align-self-center">
-                                <div class="header-search-area">
+                            <!-- Middle -->
+                            <div class="d-none d-lg-block col-lg-6 align-self-center">
+                                <div class="search">
                                     <div class="search-category dropdown">
-                                        <button type="button" class="search-category-button d-flex px-3 align-items-center" data-bs-toggle="dropdown">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2 text-warning" viewBox="0 0 24 24">
+                                        <button type="button" class="button" data-bs-toggle="dropdown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                     <circle cx="17" cy="7" r="3" />
                                                     <circle cx="7" cy="17" r="3" />
@@ -270,9 +259,9 @@
                                             </svg>
                                         </button>
 
-                                        <ul class="search-category-list dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="javascript:void(0)" class="dropdown-item primary">
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item primary">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <g fill="currentColor">
                                                             <path d="M14 11h-4v2h4z" />
@@ -281,7 +270,9 @@
                                                     </svg>
                                                     Business
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item warning">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item amber">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                             <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3" />
@@ -290,7 +281,9 @@
                                                     </svg>
                                                     Marketing
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item success">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item amerald">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                                             <path d="m17.674 11.408l-1.905 5.715a.6.6 0 0 1-.398.386L3.693 20.98a.6.6 0 0 1-.74-.765L6.745 8.841a.6.6 0 0 1 .34-.365l5.387-2.218a.6.6 0 0 1 .653.13l4.404 4.406a.6.6 0 0 1 .145.614M3.296 20.602l6.364-6.364" />
@@ -299,25 +292,33 @@
                                                     </svg>
                                                     Design
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item danger">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item red">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <path fill="currentColor" d="m6 16.5l-3 2.94V11h3m5 3.66l-1.57-1.34L8 14.64V7h3m5 6l-3 3V3h3m2.81 9.81L17 11h5v5l-1.79-1.79L13 21.36l-3.47-3.02L5.75 22H3l6.47-6.34L13 18.64" />
                                                     </svg>
                                                     Finance
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item dark">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item dark">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <path fill="currentColor" d="M12 20.02q-.238 0-.478-.096q-.24-.095-.41-.286l-6.316-6.34q-.875-.875-1.336-1.971Q3 10.231 3 9.083Q3 6.93 4.348 5.427t3.31-1.504q1.026 0 1.974.427q.947.427 1.695 1.2l.673.712l.635-.673q.761-.812 1.718-1.239t1.964-.427q1.962 0 3.323 1.504T21 9.057q0 1.168-.463 2.264q-.464 1.096-1.333 1.971l-6.34 6.347q-.191.19-.408.285t-.456.095M13 8.5q.135 0 .244.058q.11.058.177.161l1.835 2.781h4.073q.348-.579.522-1.199t.155-1.243q-.031-1.725-1.093-2.924q-1.061-1.2-2.596-1.2q-.813 0-1.583.33q-.77.328-1.334.961l-.906.975q-.105.13-.228.18T12 7.429t-.275-.059t-.244-.17l-.906-.975q-.563-.633-1.33-.967q-.768-.335-1.587-.335q-1.535 0-2.596 1.205T4 9.058q0 .642.171 1.253t.5 1.189H9q.135 0 .235.058t.167.161l1.452 2.166l1.677-5.031q.061-.165.18-.26T13 8.5m.146 1.616l-1.677 5.03q-.061.166-.192.26t-.302.094q-.134 0-.234-.058t-.168-.161L8.719 12.5h-3.3l6.406 6.425q.05.05.088.063T12 19t.088-.012t.087-.063l6.4-6.425H15q-.134 0-.244-.067t-.183-.171z" />
                                                     </svg>
                                                     Lifestyle
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item light">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item light">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                         <path fill="currentColor" d="M18.918 17.48c-.126 2.727-2.384 4.696-5.364 4.696H7.34v-6.123l-2.185-.957V24h8.381c4.334 0 7.549-2.962 7.549-6.881v-.163c-.65.235-1.372.415-2.167.524m1.355-9.501C18.611 4.313 17.726.989 15.432.213c-1.336-.452-2.005-.091-2.637.217a.306.306 0 0 0-.072.505c.361.307.813.687 1.336 1.174c-1.95-1.138-7.333-2.835-7.874-.776c-.488 1.86-1.319 4.587-1.319 4.587S.603 5.487.116 7.293s3.323 5.274 9.627 7.134c6.303 1.861 11.198 1.373 13.311-.921s.072-5.473-2.781-5.527m-1.247.036c-.487.47-2.077 1.68-5.563 1.427c-3.738-.271-6.809-2.474-7.604-3.088a.34.34 0 0 1-.126-.398c.054-.18.126-.469.253-.849c.072-.234.343-.343.542-.216c1.571.903 4.1 2.221 6.791 2.402c2.402.163 3.847-.542 4.786-1.066a.39.39 0 0 1 .542.199l.47 1.156c.036.162.018.325-.091.433" />
                                                     </svg>
                                                     Cyber
                                                 </a>
-                                                <a href="javascript:void(0)" class="dropdown-item info">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item cyan">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                                                         <path fill="currentColor" d="M9.905 2.815a.75.75 0 0 1 .38.99l-4 9a.75.75 0 1 1-1.37-.61l4-9a.75.75 0 0 1 .99-.38M4.498 5.19a.75.75 0 0 1 .063 1.058L3.003 8l1.558 1.752a.75.75 0 1 1-1.122.996l-2-2.25a.75.75 0 0 1 0-.996l2-2.25A.75.75 0 0 1 4.5 5.19m7.004 0a.75.75 0 0 1 1.059.062l2 2.25a.75.75 0 0 1 0 .996l-2 2.25a.75.75 0 0 1-1.122-.996L12.996 8L11.44 6.248a.75.75 0 0 1 .063-1.058" />
                                                     </svg>
@@ -329,7 +330,7 @@
 
                                     <form action="/" method="get" class="search-form d-flex w-100">
                                         <input type="text" class="form-control border-0" name="search" placeholder="Search your course">
-                                        <button type="button" class="button button-sm button-success">
+                                        <button type="button" class="button button-main">
                                             Search
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="ms-2">
                                                 <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
@@ -339,9 +340,9 @@
                                 </div>
                             </div>
 
-                            <!-- 3- Social Links -->
-                            <div class="header-right col col-lg-4 align-self-center d-flex justify-content-end">
-                                <div class="header-social-links">
+                            <!-- Right -->
+                            <div class="col col-lg-4 align-self-center justify-content-end justify-content-lg-start d-flex">
+                                <div class="social-links">
                                     <ul class="nav">
                                         <li class="nav-item">
                                             <a href="https://facebook.com/ahmedelsewailky" target="_blank" rel="noopener" class="nav-link" data-bs-toggle="tooltip" title="facebook">
@@ -387,54 +388,31 @@
                                     <span>3</span>
                                 </button>
 
-                                <button type="button" class="button sidebar-info-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
+                                <button type="button" class="button sidebar-cyan-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#contactInfoCanvas">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" d="M12.002 1.999c5.523 0 10.001 4.478 10.001 10.002c0 5.523-4.478 10.001-10.001 10.001C6.478 22.002 2 17.524 2 12.001C2 6.477 6.478 1.999 12.002 1.999m0 1.5a8.502 8.502 0 1 0 0 17.003a8.502 8.502 0 0 0 0-17.003M12 10.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75M12 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
                                     </svg>
                                 </button>
 
-                                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
+                                <button type="button" class="navbar-toggler d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
                                     </svg>
                                 </button>
 
-                                <div class="header-auth dropdown">
-                                    <button type="button" class="auth" data-bs-toggle="dropdown">
-                                        <div class="auth-image">
-                                            <img src="/Velora/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
-                                        </div>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li>
-                                            <a href="#" class="dropdown-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
-                                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                                        <path stroke-linejoin="round" d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" />
-                                                        <circle cx="12" cy="7" r="3" />
-                                                    </g>
-                                                </svg>
-                                                Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2m6 3V10H6v10zm0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3" />
-                                                </svg>
-                                                Password
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="m21.207 11.793l-5.914 5.914l-1.414-1.414l3.5-3.5H7.793v-2h9.586l-3.5-3.5l1.414-1.414zm-11.414-7.5h-5v15h5v2h-7v-19h7z" />
-                                                </svg>
-                                                Logout
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="html/register.html" class="button button-dark d-none d-lg-flex ms-auto me-2" role="button">
+                                    Register
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="ms-2" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M15 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m0 1.9a2.1 2.1 0 1 1 0 4.2A2.1 2.1 0 0 1 12.9 8A2.1 2.1 0 0 1 15 5.9M4 7v3H1v2h3v3h2v-3h3v-2H6V7zm11 6c-2.67 0-8 1.33-8 4v3h16v-3c0-2.67-5.33-4-8-4m0 1.9c2.97 0 6.1 1.46 6.1 2.1v1.1H8.9V17c0-.64 3.1-2.1 6.1-2.1" />
+                                    </svg>
+                                </a>
+
+                                <a href="html/login.html" class="button button-outline-dark d-none d-lg-flex" role="button">
+                                    Login
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="ms-2" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2m-8 0V7a4 4 0 0 1 4-4v0a4 4 0 0 1 4 4v3m-8 0h8m-4 4v3" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -445,10 +423,10 @@
     </div>
 
     <!-- Javascript Files, Plugins & Libraries -->
-    <script src="/Velora/assets/libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="/Velora/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/Velora/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

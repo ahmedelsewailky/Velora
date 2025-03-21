@@ -1,0 +1,12 @@
+// utilities/_text-colors.scss
+@use '../abstracts/variables' as *;
+
+@each $name, $color in $colors {
+    .text-#{$name} {
+        color: var(--#{$name}-color);
+    }
+}
+
+.text-main-color {
+    color: var(--text-main-color);
+}

@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         backSpeed: 50,   
         backDelay: 500, 
         startDelay: 200, 
-        loop: true       
+        loop: true,
+        showCursor: false    
     };
-    new Typed("#changing-text", options);
+    new Typed("#typed-text", options);
 });

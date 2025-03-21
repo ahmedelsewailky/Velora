@@ -1,42 +1,62 @@
-@use 'sass:color';
-
-@use '../abstracts/mixins' as *;
-
-button {
-    background-color: transparent;
-    border: none;
-}
+@use "sass:color";
+@use "../abstracts/variables" as *;
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    border-radius: $borderRaduis;
-    text-transform: uppercase;
-    padding: 12px 20px;
     font-weight: 500;
-    transition: 0.3s;
+    padding: 8px 12px;
+    align-items: center;
+    display: inline-flex;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: background 0.1s ease-in-out;
+    border-radius: var(--border-radius-size);
+    border: none;
+
+    &-md {
+        padding: 14px 24px;
+    }
+
+    &-lg {
+        padding: 18px 32px;
+    }
 }
 
-.button-sm {
-    padding: 10px 16px;
+@mixin button-style($color) {
+    color: white;
+    background-color: $color;
+    border: 1px solid $color;
+
+    &:hover {
+        background-color: transparent;
+        color: $color;
+        border: 1px solid $color;
+    }
 }
 
-.button-md {
-    padding: 14px 24px;
+@mixin button-outline-style($color) {
+    border: 1px solid $color;
+    color: $color;
+
+    &:hover {
+        background-color: $color;
+        color: white;
+    }
 }
 
-.button-lg {
-    padding: 18px 32px;
+.button-main {
+    @include button-style(var(--main-color));
+}
+
+.button-outline-main {
+    @include button-outline-style(var(--main-color));
 }
 
 @each $name, $color in $colors {
     .button-#{$name} {
-        background-color: $color;
-        color: white;
+        @include button-style($color);
+    }
 
-        &:hover {
-            color: white;
-            background-color: color.adjust($color, $lightness: -25%);
-        }
+    .button-outline-#{$name} {
+        @include button-outline-style($color);
     }
 }

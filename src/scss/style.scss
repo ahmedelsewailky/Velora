@@ -2,7 +2,9 @@
 @use './base/global';
 
 // Components
-@use './components/index';
+@use './components/buttons';
+@use './components/tooltips';
+@use './components/offcanvas';
 
 // Vendors
 @use './vendors/bootstrap';
@@ -11,3 +13,6 @@
 @use './layouts/header';
 @use './layouts/navbar';
 @use './layouts/hero';
+
+// Utilities
+@use './utilities/text';

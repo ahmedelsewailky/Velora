@@ -1,4 +1,11 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
+
+@mixin title-icon($color) {
+    svg {
+        margin-right: 12px;
+        color: $color;
+    }
+}
 
 .offcanvas {
     &-header {
@@ -9,11 +16,7 @@
         font-size: 16px;
         text-transform: capitalize;
         font-weight: 700;
-
-        svg {
-            margin-right: 12px;
-            color: var(--primary-color);
-        }
+        @include title-icon(var(--main-color)); // تطبيق المزيج
     }
 }
 
@@ -45,6 +48,7 @@
         padding: 24px 16px;
         border: 1px dashed transparent;
         border-bottom: 1px solid #E2E8F0;
+        background-color: transparent;
 
         &:hover {
             border-color: var(--dark-color);
@@ -65,7 +69,7 @@
             }
         }
 
-        .item-info {
+        .item-cyan {
             flex-grow: 1;
             padding: 0 16px;
 
@@ -92,7 +96,7 @@
         @media (max-width: 992px) {
             .price-amount {
                 display: block;
-    
+
                 .price {
                     margin-bottom: 4px;
                 }
@@ -106,9 +110,10 @@
             margin-left: auto;
             height: 32px;
             background-color: white;
+            transition: border-color 0.2s;
 
             &:hover {
-                border-color: var(--primary-color);
+                border-color: var(--main-color);
             }
 
             input {
@@ -133,12 +138,12 @@
             height: 18px;
             padding: 0;
             border-radius: 4px;
-            display: none;
             display: grid;
             place-content: center;
+            transition: background-color 0.2s;
 
             &:hover {
-                background-color: var(--danger-color);
+                background-color: var(--red-color);
             }
 
             svg {
@@ -154,9 +159,7 @@
     }
 }
 
-
-.side-canvas-info {
-
+.contact-info-canvas {
     h6 {
         font-size: 14px;
         font-weight: 600;
@@ -168,14 +171,15 @@
         color: var(--dark-color);
     }
 
-    .contact-info svg {
-        color: var(--primary-color);
-    }
-
     .subscribe form .form-control {
         font-size: 13px;
         line-height: 32px;
         border-radius: 4px;
         margin-bottom: 12px;
+    }
+
+    .contact-info .icon svg {
+        color: var(--main-color);
+        margin-right: 16px;
     }
 }

@@ -1,7 +1,5 @@
 @use 'sass:color';
 
-@forward './variables';
-
 @function darken-color($color, $amount: 10%) {
     @return color.adjust($color, $lightness: -$amount);
 }

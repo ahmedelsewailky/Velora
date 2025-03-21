@@ -1,26 +1,23 @@
+@use "../abstracts/variables" as *;
+
+$tooltip-color: var(--dark-color);
+
 .tooltip-inner {
-    background-color: var(--dark-color);
+    background-color: $tooltip-color;
     color: white;
     text-transform: capitalize;
 }
 
-.bs-tooltip-top .tooltip-arrow::before {
-    border-top-color: var(--dark-color);
+@mixin tooltip-arrow($direction) {
+    .bs-tooltip-#{$direction} .tooltip-arrow::before {
+        border-#{$direction}-color: $tooltip-color;
+    }
 }
 
-.bs-tooltip-bottom .tooltip-arrow::before {
-    border-bottom-color: var(--dark-color);
+@each $dir in top, bottom, start, end {
+    @include tooltip-arrow($dir);
 }
 
-.bs-tooltip-start .tooltip-arrow::before {
-    border-left-color: var(--dark-color);
-}
-
-.bs-tooltip-end .tooltip-arrow::before {
-    border-right-color: var(--dark-color);
-}
-
-.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
-.bs-tooltip-bottom .tooltip-arrow::before {
-    border-bottom-color: var(--dark-color);
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
+    border-bottom-color: $tooltip-color;
 }
