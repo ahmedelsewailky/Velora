@@ -6,10 +6,10 @@
 
 .app-header::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #f2f1e2, #dcecdd);
+    background: linear-gradient(to bottom, #dcecdd 0%, #fff 79%);
     z-index: -1;
 }
 
@@ -110,7 +110,7 @@ button.auth {
 }
 
 .header-right button {
-    padding: 0 10px;
+    padding: 0 6px;
     position: relative;
 }
 
@@ -128,11 +128,24 @@ button.auth {
 
 @media (max-width: 992px) {
     .header-inner-wrap {
-        // border: 1px solid;
         border-radius: 5px;
         padding: 12px 8px;
-        // box-shadow: 0px 5px;
         background-color: white;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-logo svg {
+        width: 24px;
+        height: 24px;
+        color: var(--primary-color);
+        margin-right: 4px;
+    }
+    .header-logo a {
+        font-size: 19px;
+        letter-spacing: .5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
     }
 }

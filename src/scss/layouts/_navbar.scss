@@ -1,7 +1,7 @@
 // Navbar style on larg screen
 @media screen and (min-width: 992px) {
     .navbar {
-        .offcanvas-navbar-inner {
+        .offcanvas {
             background-color: #fff !important;
             padding: 8px 12px;
         }
@@ -73,6 +73,10 @@
             top: 10px;
         }
     }
+
+    .dropdown-menu-heading {
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -85,6 +89,10 @@
 
 
 @media screen and (max-width: 991px) {
+    nav.navbar.navbar-expand-lg {
+        padding: 0;
+    }
+
     .offcanvas {
         overflow: hidden;
         width: 300px !important;
@@ -92,7 +100,15 @@
 
     .offcanvas-header {
         box-shadow: none;
-        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: 0 24px;
+        height: 47px;
+    }
+
+    .btn-close:focus {
+        outline: 0;
+        box-shadow: none;
+        opacity: var(--bs-btn-close-focus-opacity);
     }
 
     .navbar .navbar-nav .nav-link {
@@ -100,11 +116,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
         padding: 16px 24px;
         color: #000;
         font-weight: 600;
-        
+
     }
 
     .navbar .navbar-nav .nav-item {
@@ -147,7 +163,7 @@
 
     .navbar .navbar-nav .dropdown {
         position: static;
-    }   
+    }
 
     .navbar .dropdown-menu .dropdown-item {
         padding: 16px 24px 16px 42px;

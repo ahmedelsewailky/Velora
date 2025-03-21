@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 
     <!-- Css Files & Libraries -->
-    <link rel="stylesheet" href="/Velora/assets/libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Velora/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
@@ -26,12 +26,6 @@
                         <div class="row">
                             <!-- 1- Logo -->
                             <div class="header-left col col-lg-2 d-flex align-self-center">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 6.5h15M4.5 12h15m-15 5.5h15" />
-                                    </svg>
-                                </button>
-
                                 <div class="header-logo">
                                     <a href="/" title="Velora">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -171,7 +165,7 @@
                                     </ul>
                                 </div>
 
-                                <button type="button" class="button shopping-cart" data-bs-toggle="offcanvas" href="#addToCartCanvas">
+                                <button type="button" class="button shopping-cart d-lg-none" data-bs-toggle="offcanvas" href="#addToCartCanvas">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                             <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
@@ -181,7 +175,13 @@
                                     <span>3</span>
                                 </button>
 
-                                <button type="button" class="button sidebar-info-button" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
+                                <button type="button" class="button sidebar-info-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M12.002 1.999c5.523 0 10.001 4.478 10.001 10.002c0 5.523-4.478 10.001-10.001 10.001C6.478 22.002 2 17.524 2 12.001C2 6.477 6.478 1.999 12.002 1.999m0 1.5a8.502 8.502 0 1 0 0 17.003a8.502 8.502 0 0 0 0-17.003M12 10.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75M12 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                                    </svg>
+                                </button>
+
+                                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
                                     </svg>
@@ -189,12 +189,8 @@
 
                                 <div class="header-auth dropdown">
                                     <button type="button" class="auth" data-bs-toggle="dropdown">
-                                        <!-- <div class="auth-info">
-                                <h6>A. Elsewailky</h6>
-                                <span>Fullstack</span>
-                            </div> -->
                                         <div class="auth-image">
-                                            <img src="/Velora/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
+                                            <img src="/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
                                         </div>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end">
@@ -242,12 +238,6 @@
                         <div class="row">
                             <!-- 1- Logo -->
                             <div class="header-left col col-lg-2 d-flex align-self-center">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 6.5h15M4.5 12h15m-15 5.5h15" />
-                                    </svg>
-                                </button>
-
                                 <div class="header-logo">
                                     <a href="/" title="Velora">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -387,7 +377,7 @@
                                     </ul>
                                 </div>
 
-                                <button type="button" class="button shopping-cart" data-bs-toggle="offcanvas" href="#addToCartCanvas">
+                                <button type="button" class="button shopping-cart d-lg-none" data-bs-toggle="offcanvas" href="#addToCartCanvas">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                             <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
@@ -397,7 +387,13 @@
                                     <span>3</span>
                                 </button>
 
-                                <button type="button" class="button sidebar-info-button" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
+                                <button type="button" class="button sidebar-info-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideCanvasInfo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M12.002 1.999c5.523 0 10.001 4.478 10.001 10.002c0 5.523-4.478 10.001-10.001 10.001C6.478 22.002 2 17.524 2 12.001C2 6.477 6.478 1.999 12.002 1.999m0 1.5a8.502 8.502 0 1 0 0 17.003a8.502 8.502 0 0 0 0-17.003M12 10.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75M12 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                                    </svg>
+                                </button>
+
+                                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
                                     </svg>
@@ -405,12 +401,8 @@
 
                                 <div class="header-auth dropdown">
                                     <button type="button" class="auth" data-bs-toggle="dropdown">
-                                        <!-- <div class="auth-info">
-                                <h6>A. Elsewailky</h6>
-                                <span>Fullstack</span>
-                            </div> -->
                                         <div class="auth-image">
-                                            <img src="/Velora/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
+                                            <img src="/assets/images/avatars/avatar-1.png" alt="Auth Avatar Image">
                                         </div>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-end">
@@ -453,10 +445,10 @@
     </div>
 
     <!-- Javascript Files, Plugins & Libraries -->
-    <script src="/Velora/assets/libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="/Velora/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/Velora/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

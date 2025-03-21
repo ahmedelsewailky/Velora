@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     var options = {
-        strings: ["Everything", "Web Development", "Mobile App", "SEO", "Social Marketing"],
+        strings: ["Web Development", "Mobile App", "SEO Basics", "Social Marketing"],
         typeSpeed: 100,  
         backSpeed: 50,   
-        backDelay: 1000, 
+        backDelay: 500, 
         startDelay: 200, 
         loop: true       
     };
