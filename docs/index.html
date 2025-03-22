@@ -435,14 +435,14 @@
                                             </span>
                                             Find Courses
                                         </a>
-                                        <a href="html/course-1.html" class="button button-outline-dark button-md rounded-pill ms-2 mt-3">
+                                        <button type="button" class="button button-outline-dark button-md rounded-pill ms-2 mt-3" data-bs-toggle="modal" data-bs-target="#videoModal">
                                             <span class="me-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <path fill="currentColor" d="M6 5.912c0-.155.037-.307.107-.443c.23-.44.75-.599 1.163-.354l10.29 6.088c.14.083.255.206.332.355c.23.44.08.995-.332 1.239L7.27 18.885a.8.8 0 0 1-.415.115C6.383 19 6 18.592 6 18.089z" />
                                                 </svg>
                                             </span>
                                             Watch Video
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -678,6 +678,21 @@
                     </button>
                 </form>
             </section>
+        </div>
+    </div>
+    <div class="modal fade hero-video-modal" id="videoModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Watch Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tk3fL1iv3Kk?si=2vFjZFeayMyCzi7n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Javascript Files, Plugins & Libraries -->
