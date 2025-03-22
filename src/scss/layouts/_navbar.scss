@@ -4,6 +4,10 @@
         padding: 14px 12px;
         border-radius: var(--border-radius-size);
 
+        .logo svg {
+            color: var(--main-color)
+        }
+
         @media (max-width: 992px) {
             overflow: hidden;
             width: 300px;
@@ -27,7 +31,7 @@
                 border-right: 1px solid var(--border-color);
                 width: 54px;
             }
-            
+
             .navbar .dropdown-menu-heading button:last-child {
                 border-right: 0;
                 border-left: 1px solid var(--border-color);
@@ -38,7 +42,6 @@
     .nav-item {
         cursor: pointer;
         position: relative;
-        width: 100%;
 
         &::after {
             content: "";
@@ -54,11 +57,17 @@
         &:first-of-type::after {
             display: none;
         }
+
+        @media (max-width: 992px) {
+            & {
+                width: 100%;
+            }
+        }
     }
 
     .nav-link {
         text-transform: uppercase;
-        padding: 8px 16px;
+        padding: 8px 16px !important;
 
         @media (max-width: 992px) {
             width: 100%;
@@ -66,7 +75,7 @@
             align-items: center;
             justify-content: space-between;
             border-bottom: .0625rem solid rgba(0, 0, 0, 0.1);
-            padding: 16px 24px;
+            padding: 16px 24px !important;
             color: #000;
             font-weight: 600;
 
@@ -78,7 +87,7 @@
 
     .dropdown {
         @media (min-width: 993px) {
-            &:hover > .dropdown-menu {
+            &:hover>.dropdown-menu {
                 opacity: 1;
                 visibility: visible;
                 transform: translateY(0);
@@ -94,15 +103,15 @@
 
     .dropdown-menu {
         opacity: 0;
-        padding: 16px;
+        padding: 10px;
         display: block;
         visibility: hidden;
         transform: translateY(.625rem);
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-        .dropdown-menu {
-            left: 100%;
+        & { 
             top: 0;
+            left: 100%;
         }
 
         @media (max-width: 992px) {
@@ -122,7 +131,6 @@
 
             &.show {
                 transform: translateX(0);
-                left: 0;
             }
         }
     }
