@@ -1,0 +1,23 @@
+// At: Index
+.section.courses-category {
+    .category-item {
+        background-color: white;
+        border-radius: var(--border-radius-size);
+        padding: 24px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            --size: 48px;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 100%;
+            display: inline-grid;
+            place-content: center;
+            margin-right: 22px;
+        }
+    }
+
+    
+}

@@ -1,0 +1,18 @@
+// At: Index
+.section.about {
+    padding-top: 160px;
+
+    li {
+        line-height: 38px;
+        text-transform: capitalize;
+        font-size: 14px;
+
+        svg {
+            color: var(--main-color);
+            margin-right: 8px;
+            --size: 20px;
+            width: var(--size);
+            height: var(--size);
+        }
+    }
+}

@@ -15,4 +15,9 @@
 @use './layouts/hero';
 
 // Utilities
+@use './utilities/bg';
 @use './utilities/text';
+@use './utilities/utils';
+
+// Sections
+@use './sections/index.scss';

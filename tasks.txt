@@ -10,3 +10,6 @@
 - Ecommerce
 - Blog
 - Corporate
+
+
+- ملف gulp جاهز للأعمال التالية

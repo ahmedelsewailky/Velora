@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins';
+
+@each $name, $color in $colors {
+    .bg-soft-#{$name} {
+        color: $color;
+        background-color: rgba($color, 0.25);
+    }
+}

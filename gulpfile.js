@@ -18,7 +18,7 @@ const root = "src";
 const paths = {
     html: `${root}/*.html`,
     pages: `${root}/html/pages/*.html`,
-    includes: `${root}/html/{components,layouts,includes}/**/*.html`,
+    includes: `${root}/html/{components,layouts,includes,sections}/**/*.html`,
     css: `${root}/scss/**/*.scss`,
     js: `${root}/js/**/*.js`,
     libs: `${root}/libs/**/*.*`,

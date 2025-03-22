@@ -20,7 +20,7 @@
 body {
     font: {
         size: 13px;
-        family: "Poppins", "Changa", sans-serif;
+        family: "Poppins", "Kanit", "Changa", sans-serif;
         weight: 500;
     }
     color: var(--dark-color);
@@ -42,6 +42,12 @@ p {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 span {
     display: inline-block;
 }
@@ -50,3 +56,28 @@ button {
     background-color: transparent;
     border: none;
 }
+
+.section {
+    padding: 60px 0;
+    .subtitle {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .title {
+        font-size: 36px;
+        font-weight: 600;
+        font-family: "Kanit", sans-serif;
+        text-transform: capitalize;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+}   
