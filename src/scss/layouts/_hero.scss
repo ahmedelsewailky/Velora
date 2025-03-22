@@ -22,16 +22,17 @@
 }
 
 .hero-text {
-    text-transform: capitalize; // إزالة التكرار
+    text-transform: capitalize;
 
     h2 {
         font-size: clamp(32px, 5vw, 64px);
         font-weight: 700;
 
         span:first-of-type {
-            background-color: var(--main-color);
             color: white;
             padding: 0 8px;
+            background-color: var(--main-color);
+            border-radius: var(--border-radius-size);
         }
 
         #typed-text {
