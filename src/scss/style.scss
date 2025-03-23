@@ -1,12 +1,8 @@
 // Global
 @use './base/global';
 
+// Abstracts
 @use './abstracts/animations';
-
-// Components
-@use './components/buttons';
-@use './components/tooltips';
-@use './components/offcanvas';
 
 // Vendors
 @use './vendors/bootstrap';
@@ -16,10 +12,17 @@
 @use './layouts/navbar';
 @use './layouts/hero';
 
+// Components
+@use './components/buttons';
+@use './components/tooltips';
+@use './components/offcanvas';
+
 // Utilities
 @use './utilities/bg';
 @use './utilities/text';
 @use './utilities/utils';
 
 // Sections
-@use './sections/index.scss';
+@use './sections/about';
+@use './sections/courses-category';
+@use './sections/features';
