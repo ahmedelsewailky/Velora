@@ -1,6 +1,18 @@
 // At: Index
 .section.about {
     padding-top: clamp(32px, 2vw, 160px);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 20%;
+        background: rgb(255 205 32 / 15%);
+        border-radius: 50%;
+        filter: blur(104px);
+        height: 100%;
+        bottom: -50px;
+    }
 
     .section-image {
         position: relative;
