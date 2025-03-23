@@ -2,6 +2,25 @@
 .section.about {
     padding-top: clamp(32px, 2vw, 160px);
 
+    .section-image {
+        position: relative;
+        img:nth-child(1) {
+            width: 75%;
+        }
+    }
+
+    img.abs {
+        position: absolute;
+        &:nth-child(2) {
+            left: 0;
+        }
+        &:nth-child(3) {
+            right: 0;
+        }
+    }
+
+
+
     li {
         line-height: 38px;
         text-transform: capitalize;
