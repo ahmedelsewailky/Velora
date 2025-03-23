@@ -3,7 +3,7 @@
 
 .button {
     font-weight: 500;
-    padding: 8px 12px;
+    padding: 12px 24px;
     align-items: center;
     display: inline-flex;
     text-transform: uppercase;
@@ -11,13 +11,24 @@
     transition: background 0.1s ease-in-out;
     border-radius: var(--border-radius-size);
     border: none;
+    letter-spacing: 0.75px;
+}
 
-    &-md {
-        padding: 14px 24px;
-    }
+.button-video {
+    display: inline-flex;
+    align-items: center;
 
-    &-lg {
-        padding: 18px 32px;
+    span {
+        background: var(--main-color);
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        display: inline-grid;
+        place-content: center;
+
+        svg {
+            color: white;
+        }
     }
 }
 

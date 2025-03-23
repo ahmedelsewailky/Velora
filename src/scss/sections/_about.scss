@@ -1,6 +1,6 @@
 // At: Index
 .section.about {
-    padding-top: 160px;
+    padding-top: clamp(32px, 2vw, 160px);
 
     li {
         line-height: 38px;

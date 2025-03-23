@@ -43,17 +43,6 @@
         cursor: pointer;
         position: relative;
 
-        &::after {
-            content: "";
-            position: absolute;
-            height: .875rem;
-            width: .0625rem;
-            background: linear-gradient(45deg, #f2ea71, #c1ecc3);
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
         &:first-of-type::after {
             display: none;
         }
