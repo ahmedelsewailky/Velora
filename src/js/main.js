@@ -9,7 +9,7 @@ $(function () {
         let x = event.clientX / window.innerWidth;
         let y = event.clientY / window.innerHeight;
 
-        $(".floating-img").each(function () {
+        $(".abs").each(function () {
             let speed = $(this).data("speed");
             let moveX = (x - 0.5) * speed * 10;
             let moveY = (y - 0.5) * speed * 10;

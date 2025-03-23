@@ -4,22 +4,48 @@
 
     .section-image {
         position: relative;
+        text-align: center;
+
         img:nth-child(1) {
             width: 75%;
+            @media (max-width: 992px) {
+                width: 100%;
+                margin: 32px auto;
+            }
         }
     }
 
     img.abs {
         position: absolute;
+
         &:nth-child(2) {
-            left: 0;
+            left: 16px;
+            top: 15%;
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
+
         &:nth-child(3) {
-            right: 0;
+            right: 15%;
+            bottom: 0;
+        }
+
+        &:nth-child(4) {
+            right: 15%;
+            bottom: 10%;
+
+            @media (max-width: 992px) {
+                & {
+                    right: 10px;
+                    bottom: 20%;
+                    z-index: -1;
+                    opacity: .25;
+                    width: 80px;
+                }
+            }
         }
     }
-
-
 
     li {
         line-height: 38px;

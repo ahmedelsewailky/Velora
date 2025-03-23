@@ -5,10 +5,11 @@
 :root {
     @each $name, $color in $colors {
         --#{$name}-color: #{$color};
-        --#{$name}-rgb-color: #{color.channel($color, "red")}, 
-                              #{color.channel($color, "green")}, 
-                              #{color.channel($color, "blue")};
+        --#{$name}-rgb-color: #{color.channel($color, "red")},
+        #{color.channel($color, "green")},
+        #{color.channel($color, "blue")};
     }
+
     $main: 'orange';
     --main-color: var(--#{$main}-color);
     --main-rgb-color: var(--#{$main}-rgb-color);
@@ -23,6 +24,7 @@ body {
         family: "Poppins", "Kanit", "Changa", sans-serif;
         weight: 500;
     }
+
     color: var(--dark-color);
     background-color: whitesmoke;
 }
@@ -59,6 +61,7 @@ button {
 
 .section {
     padding: 60px 0;
+
     .subtitle {
         font-size: 16px;
         text-transform: uppercase;
@@ -66,18 +69,23 @@ button {
         margin-bottom: 10px;
         font-weight: 300;
     }
-    
+
     .title {
         font-size: 36px;
         font-weight: 600;
         font-family: "Kanit", sans-serif;
         text-transform: capitalize;
         margin-bottom: 32px;
+        @media (max-width: 992px) {
+            margin-bottom: 24px;
+        }
     }
 
     p {
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 15px;
+        line-height: 25px;
         margin-bottom: 16px;
+        color: #475569;
+        font-weight: 400;
     }
-}   
+}

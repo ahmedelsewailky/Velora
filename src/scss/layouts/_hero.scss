@@ -1,21 +1,4 @@
-@mixin animate($name, $property, $from, $to) {
-    @keyframes #{$name} {
-
-        0%,
-        100% {
-            #{$property}: $from;
-        }
-
-        50% {
-            #{$property}: $to;
-        }
-    }
-}
-
-@include animate(moveUpDown, transform, translateY(0), translateY(30px));
-@include animate(moveLeftRight, transform, translateX(0), translateX(30px));
-@include animate(rotateScale, transform, rotate(0deg) scale(1), rotate(15deg) scale(1.1));
-@include animate(diagonalMove, transform, translate(0, 0), translate(20px, -20px));
+@use '../abstracts/animations';
 
 .hero-section {
     padding: clamp(24px, 5vw, 84px) 0;
@@ -92,13 +75,10 @@
     }
 }
 
-.floating-img {
+.abs {
     position: absolute;
     pointer-events: none;
     transition: transform 0.1s linear;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
 
     &.book {
         left: 54%;

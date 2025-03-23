@@ -1,6 +1,8 @@
 // Global
 @use './base/global';
 
+@use './abstracts/animations';
+
 // Components
 @use './components/buttons';
 @use './components/tooltips';
