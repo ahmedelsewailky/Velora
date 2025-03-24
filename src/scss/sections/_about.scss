@@ -7,7 +7,7 @@
         content: '';
         position: absolute;
         width: 20%;
-        background: rgb(255 205 32 / 45%);
+        background: rgba(var(--main-rgb-color), 0.15 );
         border-radius: 50%;
         filter: blur(104px);
         height: 100%;

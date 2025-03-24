@@ -1,0 +1,34 @@
+.choose-feature-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 24px;
+}
+
+.choose-feature-item .icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+
+.choose-feature-item p {
+    font-size: 13px;
+    line-height: normal;
+    margin-top: 8px;
+}
+
+
+.float-box-counter {
+    left: 0;
+    width: 350px;
+    display: flex;
+    padding: 16px;
+    color: white;
+    position: absolute;
+    align-items: center;
+    border-radius: 12px;
+    background-color: black;
+}

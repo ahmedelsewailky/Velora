@@ -134,7 +134,7 @@
         text-transform: capitalize;
         color: rgba(0, 0, 0, 0.8);
         justify-content: space-between;
-        transition: background 0.3s ease, color 0.3s ease;
+        transition: background 0.15s ease, color 0.15s ease;
 
         &.active,
         &.active:hover {
@@ -143,8 +143,8 @@
         }
 
         &:hover {
-            color: var(--dark-color);
-            background-color: #F1F5F9;
+            color: white;
+            background-color: var(--main-color);
         }
 
         &.dropdown-toggle::after {
