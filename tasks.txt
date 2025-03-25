@@ -13,3 +13,6 @@
 
 
 - ملف gulp جاهز للأعمال التالية
+
+الصفحة الرئيسية الشكل التاني:
+https://craftohtml.themezaa.com/demo-corporate.html

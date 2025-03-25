@@ -1,0 +1,20 @@
+.brand-slider .swiper-slide {
+    width: 200px;
+    text-align: center;
+}
+
+.brand-slider .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scrollLeft 170s linear infinite;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

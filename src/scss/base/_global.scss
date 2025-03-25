@@ -10,7 +10,7 @@
         #{color.channel($color, "blue")};
     }
 
-    $main: 'orange';
+    $main: 'blue';
     --main-color: var(--#{$main}-color);
     --main-rgb-color: var(--#{$main}-rgb-color);
     --text-main-color: var(--#{$main}-color);
@@ -87,5 +87,9 @@ button {
         margin-bottom: 16px;
         color: #475569;
         font-weight: 400;
+    }
+
+    &-image {
+        position: relative;
     }
 }
