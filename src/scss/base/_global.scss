@@ -10,7 +10,7 @@
         #{color.channel($color, "blue")};
     }
 
-    $main: 'blue';
+    $main: 'amerald';
     --main-color: var(--#{$main}-color);
     --main-rgb-color: var(--#{$main}-rgb-color);
     --text-main-color: var(--#{$main}-color);
@@ -59,6 +59,11 @@ button {
     border: none;
 }
 
+.bx {
+    font-size: 18px;
+    color: inherit;
+}
+
 .section {
     padding: 60px 0;
 
@@ -76,6 +81,7 @@ button {
         font-family: "Kanit", sans-serif;
         text-transform: capitalize;
         margin-bottom: 32px;
+
         @media (max-width: 992px) {
             margin-bottom: 24px;
         }

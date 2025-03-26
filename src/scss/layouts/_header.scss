@@ -38,12 +38,6 @@
                 transparent 79%);
         z-index: -1;
     }
-
-    // @media (max-width: 992px) {
-    //     & {
-    //         height: 100vh;
-    //     }
-    // }
 }
 
 .header {
@@ -56,19 +50,9 @@
             letter-spacing: 0.5px;
         }
 
-        svg {
-            width: 40px;
-            height: 32px;
-            color: var(--main-color);
-        }
+        svg { color: var(--main-color) }
 
         @media (max-width: 992px) {
-            svg {
-                width: 24px;
-                height: 24px;
-                color: var(--main-color);
-                margin-right: 4px;
-            }
 
             a {
                 font-size: 19px;
@@ -92,11 +76,6 @@
             display: flex;
             align-items: center;
 
-            svg:first-of-type {
-                width: 22px;
-                margin-right: 12px;
-            }
-
             button {
                 @extend %flex-center;
                 border: none;
@@ -118,15 +97,12 @@
             @each $name, $color in $colors {
                 .dropdown-item.#{$name} svg {
                     color: $color;
+                    margin-right: 8px;
                 }
             }
 
             .dropdown-menu {
                 width: 200px;
-
-                svg {
-                    width: 20px;
-                }
             }
         }
     }
@@ -140,12 +116,7 @@
 
         a {
             padding: 0 8px;
-        }
-
-        svg {
-            width: 20px;
-            height: auto;
-            color: var(--dark-color, #000);
+            color: inherit;
         }
 
         @media (max-width: 1200px) {
