@@ -1,0 +1,43 @@
+.stats-box {
+    $borderRadiusSize: 12px;
+    color: #fff;
+    padding: 32px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: $borderRadiusSize;
+    background: var(--dark-color) url("../images/abstracts/abstract-wave.png") {
+        repeat: no-repeat;
+        position-x: right;
+        position-y: bottom;
+    }
+
+    .section-image img {
+        width: 100%;
+        border-radius: $borderRadiusSize;
+    }
+
+    .section-text {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: 42px;
+    }
+
+    .stats-item {
+        padding: 12px;
+        text-align: left;
+        margin-bottom: 24px;
+
+        h6 span {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.75px;
+        }
+    }
+
+}
