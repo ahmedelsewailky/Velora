@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const odometers = document.querySelectorAll(".odometer");
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                let odometer = entry.target;
-                let finalValue = odometer.dataset.value;
+            let odometer = entry.target;
+            let finalValue = odometer.dataset.value;
 
+            if (entry.isIntersecting) {
+                odometer.innerHTML = "0";
                 setTimeout(() => {
                     odometer.innerHTML = finalValue;
                 }, 200);
-
-                observer.unobserve(odometer);
             }
         });
     }, { threshold: 0.5 });
