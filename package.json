@@ -5,10 +5,6 @@
     "description": "Online Courses Bootstrap Template",
     "homepage": "https://ahmedelsewailky.github.io/Velora/",
     "type": "module",
-    "scripts": {
-        "dev": "gulp",
-        "build": "cross-env NODE_ENV=production gulp"
-    },
     "devDependencies": {
         "browser-sync": "^3.0.3",
         "cross-env": "^7.0.3",
