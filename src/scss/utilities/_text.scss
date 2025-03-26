@@ -7,6 +7,10 @@
     }
 }
 
-.text-main-color {
-    color: var(--text-main-color);
+.text-main {
+    color: var(--text-main);
+}
+
+.text-xs {
+    font-size: 13px !important;
 }

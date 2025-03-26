@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 setTimeout(() => {
                     odometer.innerHTML = finalValue;
-                }, 100);
+                }, 200);
 
                 observer.unobserve(odometer);
             }

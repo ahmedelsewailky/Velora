@@ -13,7 +13,7 @@
     $main: 'amerald';
     --main-color: var(--#{$main}-color);
     --main-rgb-color: var(--#{$main}-rgb-color);
-    --text-main-color: var(--#{$main}-color);
+    --text-main: var(--#{$main}-color);
     --border-radius-size: 4px;
     --border-color: #CBD5E1;
 }

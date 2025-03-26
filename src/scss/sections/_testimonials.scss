@@ -1,0 +1,107 @@
+.testimonials {
+    background-color: whitesmoke;
+
+    .section-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-side {
+        text-align: right;
+        position: relative;
+        z-index: 1;
+    }
+
+    .swiper {
+        position: absolute;
+        padding: 32px;
+        background-color: #fff;
+        border-radius: var(--border-radius-size);
+        width: 60%;
+        margin: 24px auto 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+        left: 12%;
+
+        .swiper-slide {
+            opacity: 0 !important;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .swiper-slide-active {
+            opacity: 1 !important;
+        }
+
+        .quote-icon-bg {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+
+            .bx {
+                font-size: 128px;
+                color: rgba(var(--main-rgb-color), 0.08);
+            }
+        }
+
+
+        .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            background: #9a9c9f;
+            border: 1px solid #9a9c9f;
+            transform: scale(0.6);
+            transition: 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: var(--main-color);
+            border-color: var(--main-color);
+            transform: scale(1);
+        }
+    }
+
+    .testimonial-card {
+        .comment {
+            font-size: 16px;
+            margin: 24px 0;
+        }
+
+        .comment-writer {
+            img {
+                --size: 48px;
+                width: var(--size);
+                height: var(--size);
+                border-radius: 100%;
+                object-fit: cover;
+            }
+
+            h6 {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 12px;
+                letter-spacing: 0.2px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .right-side {
+        img:nth-child(3) {
+            right: 50%;
+            top: 20%;
+            z-index: -1;
+        }
+
+        img:nth-child(4) {
+            bottom: 0;
+            right: 6%
+        }
+    }
+
+}
