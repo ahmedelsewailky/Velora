@@ -47,7 +47,8 @@ function html() {
     return src(paths.html)
         .pipe(fileInclude({
             prefix: "@@",
-            basepath: "./src"
+            basepath: "./src",
+            pagetitle: "Undefind"
         }))
         .pipe(htmlbeautify({ indent_size: 4 }))
         .pipe(dest(basedir))
