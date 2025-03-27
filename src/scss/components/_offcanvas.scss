@@ -10,6 +10,7 @@
 .offcanvas {
     &-header {
         box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+
         @media (max-width: 992px) {
             & {
                 box-shadow: none;
@@ -101,7 +102,9 @@
         @media (max-width: 992px) {
             .price-amount {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
 
                 .price {
                     margin-bottom: 4px;
@@ -136,6 +139,9 @@
 
             @media (max-width: 992px) {
                 display: inline-flex;
+                margin-left: 0;
+                margin-top: 4px;
+                border-radius: 2px;
             }
         }
 
@@ -177,7 +183,7 @@
         margin-bottom: 16px;
     }
 
-    .offcanvas-body > div {
+    .offcanvas-body>div {
         margin-bottom: 24px;
         border-bottom: 1px dashed rgb(0 0 0 / 25%);
     }

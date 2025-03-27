@@ -31,6 +31,10 @@
         text-align: left;
         margin-bottom: 24px;
 
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+
         h6 span {
             font-size: 30px;
             font-weight: 600;
