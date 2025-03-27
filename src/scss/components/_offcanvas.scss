@@ -188,19 +188,26 @@
         border-bottom: 1px dashed rgb(0 0 0 / 25%);
     }
 
-    .socials svg {
-        color: var(--dark-color);
-    }
+    .socials {
+        .bx {
+            color: var(--text-main);
+            font-size: 20px;
+        }
 
-    .subscribe form .form-control {
-        font-size: 13px;
-        line-height: 32px;
-        border-radius: 4px;
-        margin-bottom: 12px;
+        a {
+            padding: 0 9px;
+        }
     }
+}
 
-    .contact-info .icon svg {
-        color: var(--main-color);
-        margin-right: 16px;
-    }
+.subscribe form .form-control {
+    font-size: 13px;
+    line-height: 32px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.contact-info .icon svg {
+    color: var(--main-color);
+    margin-right: 16px;
 }
