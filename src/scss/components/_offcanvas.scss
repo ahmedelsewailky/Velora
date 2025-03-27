@@ -100,7 +100,8 @@
 
         @media (max-width: 992px) {
             .price-amount {
-                display: block;
+                display: flex;
+                justify-content: space-between;
 
                 .price {
                     margin-bottom: 4px;
