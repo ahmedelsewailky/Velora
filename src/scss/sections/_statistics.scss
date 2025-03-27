@@ -21,6 +21,9 @@
         align-items: center;
         height: 100%;
         padding-left: 42px;
+        @media (max-width: 992px) {
+            padding-left: 0;
+        }
     }
 
     .stats-item {

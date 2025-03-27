@@ -23,8 +23,10 @@
         margin: -48px auto 21px;
         font-size: 13px;
 
-        svg {
-            width: 15px;
+        .bx {
+            font-size: 16px;
+            margin-right: 8px;
+            color: var(--main-color);
         }
 
         h6 {
@@ -46,9 +48,11 @@
             span {
                 display: flex;
                 align-items: center;
+            }
 
-                svg {
-                    margin-right: 7px;
+            @media (max-width: 992px) {
+                .teacher {
+                    display: none;
                 }
             }
         }

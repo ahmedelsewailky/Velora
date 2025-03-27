@@ -26,6 +26,14 @@
         text-align: left;
         left: 12%;
 
+        @media (max-width: 992px) {
+            position: relative;
+            width: 100%;
+            left: 0;
+            top: 0;
+            transform: translateY(0);
+        }
+
         .swiper-slide {
             opacity: 0 !important;
             transition: opacity 0.5s ease-in-out;

@@ -2,11 +2,22 @@ section.choose-us {
     background-color: #F1F5F9;
     position: relative;
 
+    .section-image img:nth-child(1) {
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+    }
+
     .section-image img:nth-child(3) {
         position: absolute;
         top: 25%;
         right: 0;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
+
     .section-image img:nth-child(4) {
         position: absolute;
         width: 70px;
@@ -43,10 +54,15 @@ section.choose-us {
     width: -moz-max-content;
     width: max-content;
     padding: 24px;
-    border-radius: 4px; 
+    border-radius: 4px;
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 32px rgb(0 0 0 / .08);
+
+    @media (max-width: 992px) {
+        right: 50%;
+        bottom: 5%;
+    }
 
     .text h6 {
         font: {
