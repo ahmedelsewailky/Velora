@@ -11,6 +11,7 @@
 @use './layouts/header';
 @use './layouts/navbar';
 @use './layouts/hero';
+@use './layouts/footer';
 
 // Components
 @use './components/buttons';
@@ -31,3 +32,4 @@
 @use './sections/brands';
 @use './sections/statistics';
 @use './sections/testimonials';
+@use './sections/blog';

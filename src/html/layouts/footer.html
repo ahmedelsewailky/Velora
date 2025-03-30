@@ -1,7 +1,116 @@
-<footer>
-    <div class="container">
-        <div class="text-center py-2">
-            <p>All rights resaved &copy; 2025</p>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="info">
+                        @@include('html/components/logo.html')
+
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+
+                        @@include('html/components/socials.html')
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="links">
+                        <h6>Links</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Our Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Pricing Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Our News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQ’s</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="contact-info">
+                        <h6>Contact Us</h6>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1"
+                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2m10 3a2 2 0 0 1 2 2m-2-6a6 6 0 0 1 6 6" />
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <span class="d-block small text-muted mb-1">24/7 Support</span>
+                                <a href="tel:+201080720455" class="fw-semibold">(+2) 010 80 720 455</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m7 9l5 3.5L17 9" />
+                                        <path
+                                            d="M2 17V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <span class="d-block small text-muted mb-1">Send Message</span>
+                                <a href="mailto:ahmed.elsewailky@gmail.com"
+                                    class="fw-semibold">ahmed.elsewailky@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-width="1"
+                                        d="M3 8.71c0-1.474 0-2.21.393-2.64a1.5 1.5 0 0 1 .497-.36c.532-.236 1.231-.003 2.629.463c1.067.356 1.6.534 2.14.515a3 3 0 0 0 .588-.078c.525-.125.993-.437 1.929-1.06l1.382-.922c1.2-.8 1.799-1.2 2.487-1.291c.688-.093 1.372.135 2.739.591l1.165.388c.99.33 1.485.495 1.768.888S21 6.12 21 7.162v8.129c0 1.473 0 2.21-.393 2.64a1.5 1.5 0 0 1-.497.358c-.532.237-1.231.004-2.629-.462c-1.067-.356-1.6-.534-2.14-.515a3 3 0 0 0-.588.078c-.525.125-.993.437-1.929 1.06l-1.382.922c-1.2.8-1.799 1.2-2.487 1.291c-.688.093-1.372-.135-2.739-.591l-1.165-.388c-.99-.33-1.485-.495-1.768-.888S3 17.88 3 16.838zm6-2.071V20.5M15 3v14" />
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <span class="d-block small text-muted mb-1">Our Location</span>
+                                <p class="fw-semibold">23 Naser City, Cairo, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="news-letter">
+                        <h6>Subscribe</h6>
+                        <p>Enter your email address to register to our newsletter subscription</p>
+                        <form action="/" method="get">
+                            <input type="email" name="email" class="form-control" placeholder="Enter email">
+                            <button type="button" class="button button-lg button-main mb-1 mb-lg-0">
+                                Subscribe Now
+                                <span><i class='bx bx-right-arrow-alt ms-1'></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; Copyright <span id="footer-year"></span> Velora | Developed By <a
+                        href="https://github.com/ahmedelsewailky" target="_blank" rel="noopener">A.Elsewelky</a>. All
+                    Rights Reserved</p>
+            </div>
         </div>
     </div>
 </footer>

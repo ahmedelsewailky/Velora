@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora - @@pagetitle</title>
 
     @@include('html/includes/head.html', {pagetitle: 'Online Courses Bootstrap Template'})
 </head>
@@ -12,19 +13,14 @@
     <div id="app">
         <div class="app-wrapper">
             <div class="app-header">
-                <!-- .header -->
+                <!-- Header -->
                 @@include('html/layouts/header.html')
-    
-                <!-- .navbar --> 
-                @@include('html/layouts/navbar.html')
-    
-                <!-- .hero -->
-                @@include('html/layouts/hero.html')
 
-                <img src="assets/images/abstracts/abstract-dots-1.svg" data-speed="5" class="abs parallax-effect v-animate move-up-down dots" alt="Hero image preview">
-                <img src="assets/images/abstracts/abstract-red-plus-1.svg" data-speed="8" class="abs parallax-effect v-animate move-left-right red-plus" alt="Hero image preview">
-                <img src="assets/images/abstracts/element-book-2.svg" data-speed="6" class="abs parallax-effect v-animate  book" alt="Hero image preview">
-                <img src="assets/images/abstracts/element-crown-2.png" width="100" data-speed="-4" class="abs parallax-effect v-animate diagonalMove crown" alt="Hero image preview">
+                <!-- Navbar -->
+                @@include('html/layouts/navbar.html')
+
+                <!-- Hero -->
+                @@include('html/layouts/hero.html')
             </div>
 
             <!-- Section: About -->
@@ -50,6 +46,15 @@
 
             <!-- Section: Testimonials -->
             @@include('html/sections/section-testimonials.html')
+
+            <!-- Section: Blog -->
+            @@include('html/sections/section-blog-article.html')
+
+            <!-- Section: Get Started -->
+            @@include('html/sections/section-get-started.html')
+
+            <!-- Footer -->
+            @@include('html/layouts/footer.html')
         </div>
     </div>
 

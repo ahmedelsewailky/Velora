@@ -1,6 +1,9 @@
 @use 'sass:color';
 
-// Form Control
+.nav-link {
+    color: inherit;
+}
+
 .form-control {
     border-radius: 0;
     font-size: inherit;
@@ -14,9 +17,12 @@
 
 .dropdown-menu {
     font-size: inherit;
+
     border: none {
         radius: .25rem;
-    };
+    }
+
+    ;
     box-shadow: 0 0 1.0625rem rgba(0, 0, 0, 0.1);
 }
 

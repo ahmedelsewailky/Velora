@@ -29,3 +29,9 @@ $(function () {
 
 });
 
+/**
+ * Assign a dynamic year on the footer
+ */
+let year = document.getElementById("footer-year");
+year.textContent = new Date().getFullYear();
+
