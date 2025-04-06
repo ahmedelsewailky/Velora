@@ -32,8 +32,16 @@
         line-height: 1.75;
     }
 
-    .button i {
-        display: inline-block;
+    .button {
+        @media (max-width: 567px) {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 6px;
+        }
+
+        i {
+            display: inline-block;
+        }
     }
 
     @media (max-width: 992px) {

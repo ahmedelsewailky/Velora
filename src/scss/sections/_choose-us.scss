@@ -7,6 +7,10 @@ section.choose-us {
             @media (max-width: 992px) {
                 width: 65%;
             }
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
 
         img:nth-child(3) {
@@ -71,10 +75,15 @@ section.choose-us {
     box-shadow: 0 0 32px rgb(0 0 0 / .08);
 
     @media (max-width: 992px) {
-        right: -90px;
+        right: 10%;
         top: 40%;
-        transform: translateX(-60%);
         bottom: auto;
+    }
+
+    @media (max-width: 567px) {
+        left: 10px;
+        top: auto;
+        bottom: -10%;
     }
 
     .text h6 {

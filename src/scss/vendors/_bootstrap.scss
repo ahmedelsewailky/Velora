@@ -41,6 +41,13 @@
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .container {
         padding-left: 32px;
         padding-right: 32px;
     }

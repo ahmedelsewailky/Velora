@@ -9,11 +9,20 @@
     text-transform: uppercase;
     background-color: transparent;
     transition: background 0.1s ease-in-out;
-    border-radius: var(--border-radius-size);
+    border-radius: 100px;
     border: none;
     letter-spacing: 0.75px;
-}
 
+    i {
+        display: grid !important;
+        place-content: center;
+        --size: 32px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 100%;
+        margin-left: 12px;
+    }
+}
 
 .button-sm {
     padding: 4px 12px;
@@ -24,16 +33,56 @@
     padding: 12px 24px;
 }
 
+.button-main {
+    color: white;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
 
-@mixin button-style($color) {
+    i {
+        color: var(--main-color);
+        background-color: white;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: var(--main-color);
+
+        i {
+            color: white;
+            background-color: var(--main-color);
+        }
+    }
+}
+
+.button-outline-main {
+    color: var(--main-color);
+    border-color: var(--main-color);
+
+    i {
+        color: white;
+        background-color: var(--main-color);
+    }
+}
+
+@mixin button-solid-color($color) {
     color: white;
     background-color: $color;
     border: 1px solid $color;
+
+    i {
+        color: $color;
+        background-color: white;
+    }
 
     &:hover {
         background-color: transparent;
         color: $color;
         border: 1px solid $color;
+
+        i {
+            color: white;
+            background-color: $color;
+        }
     }
 }
 
@@ -41,23 +90,25 @@
     border: 1px solid $color;
     color: $color;
 
+    i {
+        color: white;
+        background-color: $color;
+    }
+
     &:hover {
         background-color: $color;
         color: white;
+
+        i {
+            color: $color;
+            background-color: white;
+        }
     }
-}
-
-.button-main {
-    @include button-style(var(--main-color));
-}
-
-.button-outline-main {
-    @include button-outline-style(var(--main-color));
 }
 
 @each $name, $color in $colors {
     .button-#{$name} {
-        @include button-style($color);
+        @include button-solid-color($color);
     }
 
     .button-outline-#{$name} {
@@ -70,8 +121,18 @@
     background-color: white;
     border: 1px solid white;
 
+    i {
+        color: white;
+        background-color: var(--dark-color);
+    }
+
     &:hover {
         color: white;
         background-color: transparent;
+
+        i {
+            background-color: white;
+            color: var(--dark-color);
+        }
     }
 }
