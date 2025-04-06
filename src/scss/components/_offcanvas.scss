@@ -8,6 +8,7 @@
 }
 
 .offcanvas {
+
     &-header {
         box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
 
@@ -27,6 +28,8 @@
 }
 
 .offcanvas-cart {
+    will-change: transform;
+
     .offcanvas-footer {
         padding: 24px;
         color: #94A3B8;
