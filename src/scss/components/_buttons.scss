@@ -38,6 +38,54 @@
         margin-left: 12px;
     }
 
+    &.button-main {
+        i {
+            color: var(--main-color);
+            background-color: white;
+        }
+
+        &:hover i {
+            color: white;
+            background-color: var(--main-color);
+        }
+    }
+
+    &.button-dark {
+        i {
+            color: var(--dark-color);
+            background-color: white;
+        }
+
+        &:hover i {
+            background-color: var(--dark-color);
+            color: white;
+        }
+    }
+
+    &.button-outline-dark {
+        i {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        &:hover i {
+            color: var(--dark-color);
+            background-color: white;
+        }
+    }
+
+    &.button-white {
+        i {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        &:hover i {
+            color: var(--dark-color);
+            background-color: white;
+        }
+    }
+
 }
 
 .button-main {

@@ -32,18 +32,6 @@
         line-height: 1.75;
     }
 
-    .button {
-        @media (max-width: 567px) {
-            width: 100%;
-            justify-content: center;
-            margin-bottom: 6px;
-        }
-
-        i {
-            display: inline-block;
-        }
-    }
-
     @media (max-width: 992px) {
         h2 {
             font-size: 24px;
@@ -53,14 +41,14 @@
 
         p {
             font-size: 13px;
-            margin: 14px 0;
+            margin: 0;
             width: 100%;
             line-height: 24px;
             color: rgb(0 0 0 / 60%);
         }
 
         .button i {
-            display: none;
+            display: none !important;
         }
     }
 }
