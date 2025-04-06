@@ -14,7 +14,7 @@
             position: absolute;
             bottom: 12px;
             left: 12px;
-            background-color: white;
+            background-color: var(--lime-color);
             padding: 6px 12px;
             text-transform: capitalize;
             font-size: 12px;
@@ -23,7 +23,7 @@
 
             &:hover {
                 color: white;
-                background-color: var(--main-color);
+                background-color: var(--dark-color);
             }
         }
     }
