@@ -6,7 +6,7 @@
     "homepage": "https://ahmedelsewailky.github.io/Velora/",
     "type": "module",
     "scripts": {
-        "dev": "npm run dev"
+        "dev": "gulp"
     },
     "devDependencies": {
         "browser-sync": "^3.0.3",
