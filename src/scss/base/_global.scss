@@ -13,6 +13,7 @@
     $main: 'amerald';
     --main-color: var(--#{$main}-color);
     --main-rgb-color: var(--#{$main}-rgb-color);
+    --bg-ice-gray: #F1F5F9;
     --text-main: var(--#{$main}-color);
     --border-radius-size: 4px;
     --border-color: #CBD5E1;
@@ -27,7 +28,7 @@ body {
 body {
     font: {
         size: 14px;
-        
+
         family: "Poppins", "Kanit", "Changa", sans-serif;
         weight: 500;
     }
