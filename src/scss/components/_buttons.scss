@@ -64,3 +64,14 @@
         @include button-outline-style($color);
     }
 }
+
+.button-white {
+    color: var(--dark-color);
+    background-color: white;
+    border: 1px solid white;
+
+    &:hover {
+        color: white;
+        background-color: transparent;
+    }
+}

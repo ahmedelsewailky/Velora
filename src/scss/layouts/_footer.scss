@@ -1,4 +1,24 @@
 .footer {
+    background-color: #f1f5f9;
+    padding-top: 32px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 350px;
+        left: 0;
+        top: -75%;
+
+        @media (max-width: 992px) {
+            top: -240px;
+        }
+
+        background-color: #f1f5f9;
+        z-index: -1;
+    }
+
     .footer-title {
         text-transform: uppercase;
         font-size: 14px;
@@ -9,7 +29,7 @@
     .logo {
         font-size: 32px;
         font-weight: 600;
-        margin-bottom: 14px;
+        margin-bottom: 24px;
 
         svg {
             color: var(--main-color);
@@ -21,6 +41,10 @@
         &+p {
             line-height: 24px;
         }
+    }
+
+    .nav-link {
+        padding-left: 0;
     }
 
     .socials {
@@ -43,6 +67,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 16px;
+
         @media (max-width: 768px) {
             // padding-left: 24px;
         }
@@ -51,14 +76,22 @@
     .footer-block {
         margin-bottom: 24px;
     }
+
+    .news-letter p {
+        line-height: 24px;
+        margin-bottom: 18px;
+        font-weight: 300;
+    }
 }
 
 .copyright {
     .section-inner {
         text-align: center;
         border-top: 1px solid var(--border-color);
-        padding-top: 12px;
+        padding: 12px 0;
 
-        a { color: var(--main-color) }
+        a {
+            color: var(--main-color)
+        }
     }
 }
