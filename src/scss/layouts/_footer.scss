@@ -26,20 +26,7 @@
     }
 
     .logo {
-        font-size: 32px;
-        font-weight: 600;
         margin-bottom: 24px;
-
-        svg {
-            color: var(--main-color);
-            width: 48px;
-            height: 40px;
-
-        }
-
-        &+p {
-            line-height: 24px;
-        }
     }
 
     .nav-link {

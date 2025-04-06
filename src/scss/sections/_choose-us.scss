@@ -5,20 +5,20 @@ section.choose-us {
     .section-image {
         img:nth-child(1) {
             @media (max-width: 992px) {
-                width: 100%;
+                width: 65%;
             }
         }
-    
+
         img:nth-child(3) {
             position: absolute;
             top: 25%;
             right: 0;
-    
+
             @media (max-width: 992px) {
                 display: none;
             }
         }
-    
+
         img:nth-child(4) {
             position: absolute;
             width: 70px;
@@ -32,9 +32,7 @@ section.choose-us {
     display: flex;
     align-items: start;
     margin-bottom: 24px;
-}
 
-.choose-feature-item {
     .icon {
         width: 64px;
         height: 64px;
@@ -44,11 +42,20 @@ section.choose-us {
         flex-shrink: 0;
         margin-right: 24px;
     }
-    
+
     p {
         font-size: 13px;
         line-height: normal;
         margin-top: 8px;
+    }
+
+    @media (min-width: 576px) and (max-width: 991px) {
+        flex-direction: column;
+
+        .icon {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
     }
 }
 
@@ -64,9 +71,10 @@ section.choose-us {
     box-shadow: 0 0 32px rgb(0 0 0 / .08);
 
     @media (max-width: 992px) {
-        left: 50%;
-        bottom: -40px;
+        right: -90px;
+        top: 40%;
         transform: translateX(-60%);
+        bottom: auto;
     }
 
     .text h6 {

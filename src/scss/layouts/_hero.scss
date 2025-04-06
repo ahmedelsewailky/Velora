@@ -32,8 +32,11 @@
         line-height: 1.75;
     }
 
+    .button i {
+        display: inline-block;
+    }
+
     @media (max-width: 992px) {
-        text-align: center;
         h2 {
             font-size: 24px;
             font-weight: 500;
@@ -43,9 +46,13 @@
         p {
             font-size: 13px;
             margin: 14px 0;
+            width: 100%;
             line-height: 24px;
             color: rgb(0 0 0 / 60%);
-            width: 100%;
+        }
+
+        .button i {
+            display: none;
         }
     }
 }
@@ -56,22 +63,22 @@
     z-index: 1;
 
     img {
+        position: relative;
         height: clamp(330px, 50vw, 550px);
         right: 10%;
         top: 10px;
-        position: relative;
     }
 
     &::before {
+        content: '';
         position: absolute;
-        content: "";
+        top: 0;
+        right: 0;
+        z-index: -1;
         width: clamp(320px, 40vw, 500px);
         height: clamp(320px, 40vw, 500px);
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
         border-radius: 50%;
-        right: 0;
-        z-index: -1;
-        top: 0;
     }
 }
 
@@ -81,17 +88,18 @@
     transition: transform 0.1s linear;
 
     &.book {
-        left: 54%;
+        bottom: 100px;
+        right: 40%;
         width: 100px;
-        bottom: 80px;
+        z-index: -1;
         animation-name: rotateScale;
     }
 
     &.circle {
         top: -20px;
-        z-index: -1;
-        opacity: .6;
         left: -20px;
+        opacity: 0.6;
+        z-index: -1;
     }
 
     &.red-plus {
@@ -102,9 +110,13 @@
 
     &.crown {
         top: 50%;
-        right: 140px;
+        right: 40px;
         z-index: 1;
         animation-name: diagonalMove;
+
+        @media (min-width: 992px) {
+            right: 140px;
+        }
     }
 
     &.dots {
@@ -118,12 +130,6 @@
         &.dots {
             top: 25%;
             right: 30px;
-            z-index: -1;
-        }
-
-        &.book,
-        &.crown {
-            display: none;
         }
 
         &.red-plus {
@@ -133,9 +139,15 @@
         }
 
         &.circle {
-            top: -20px;
             width: 45%;
-            left: -20px;
+        }
+    }
+
+    @media (max-width: 577px) {
+
+        &.book,
+        &.crown {
+            display: none;
         }
     }
 }

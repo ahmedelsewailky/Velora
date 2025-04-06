@@ -43,8 +43,9 @@
 
         // Highlight items: 1, 4, 5, 8
         .section-content .row>div:nth-child(1),
+        .section-content .row>div:nth-child(2),
         .section-content .row>div:nth-child(4),
-        .section-content .row>div:nth-child(5),
+        .section-content .row>div:nth-child(6),
         .section-content .row>div:nth-child(8) {
             .category-item {
                 background-color: var(--bg-ice-gray);
