@@ -1,5 +1,81 @@
 .blog-post {
-    .post-image img {
-        width: 100%;
+    .post-image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+
+        img {
+            width: 100%;
+            transition: 0.3s ease-in-out;
+        }
+
+        .meta-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background-color: white;
+            padding: 6px 12px;
+            text-transform: capitalize;
+            font-size: 12px;
+            border-radius: 50px;
+            transition: 0.2s ease;
+
+            &:hover {
+                color: white;
+                background-color: var(--main-color);
+            }
+        }
+    }
+
+    .post-meta {
+        display: flex;
+        font-size: 13px;
+        padding: 14px 0;
+        justify-content: space-between;
+
+        >div {
+            display: flex;
+            gap: 6px;
+
+            i {
+                color: var(--main-color);
+            }
+        }
+
+        @media (max-width: 992px) {
+            padding-bottom: 8px;
+        }
+    }
+
+    .post-title {
+        font: {
+            size: 18px;
+            weight: 600;
+        }
+
+        text-transform: capitalize;
+        color: var(--dark-color);
+        text-decoration: none;
+
+        background: linear-gradient(var(--dark-color) 0%, var(--dark-color) 98%) {
+            size: 0 2px;
+            repeat: no-repeat;
+            position: left 100%;
+        }
+
+        transition: all 0.4s ease;
+    }
+
+    @media (max-width: 992px) {
+        margin-bottom: 24px;
+    }
+
+    // Globale hover to hole post-item
+    &:hover .post-title {
+        background-size: 100% 2px;
+    }
+
+    &:hover .post-image img {
+        transform: scale(1.2) rotate(5deg);
     }
 }
