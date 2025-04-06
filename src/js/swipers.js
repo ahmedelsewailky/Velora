@@ -22,9 +22,9 @@ var swiper = new Swiper(".testimonials .swiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    effect: "fade", // تغيير التأثير إلى "fade"
+    effect: "fade",
     fadeEffect: {
-        crossFade: true, // يجعل الشرائح تتلاشى بسلاسة
+        crossFade: true,
     },
     breakpoints: {
         768: {
