@@ -5,6 +5,9 @@
     "description": "Online Courses Bootstrap Template",
     "homepage": "https://ahmedelsewailky.github.io/Velora/",
     "type": "module",
+    "scripts": {
+        "dev": "npm run dev"
+    },
     "devDependencies": {
         "browser-sync": "^3.0.3",
         "cross-env": "^7.0.3",
