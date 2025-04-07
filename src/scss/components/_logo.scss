@@ -1,7 +1,10 @@
 .logo {
     a {
-        font-weight: 600;
-        font-size: 24px;
+        font: {
+            weight: 600;
+            size: 24px;
+        }
+
         letter-spacing: 0.5px;
     }
 
@@ -23,4 +26,3 @@
         }
     }
 }
-
