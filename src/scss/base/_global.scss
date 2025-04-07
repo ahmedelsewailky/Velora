@@ -10,12 +10,11 @@
         #{color.channel($color, "blue")};
     }
 
-    $main: 'amerald';
-    --main-color: var(--#{$main}-color);
-    --main-rgb-color: var(--#{$main}-rgb-color);
+    --main-color: var(--#{$mainColor}-color);
+    --main-rgb-color: var(--#{$mainColor}-rgb-color);
     --bg-ice-gray: #F1F5F9;
-    --text-main: var(--#{$main}-color);
-    --border-radius-size: 4px;
+    --text-main: var(--#{$mainColor}-color);
+    --border-radius-size: 8px;
     --border-color: #CBD5E1;
 }
 
@@ -37,10 +36,14 @@ body {
     background-color: #fff;
 }
 
-a, .nav-link {
+a,
+.nav-link {
     color: inherit;
     text-decoration: none;
-    &:hover { color: var(--main-color) }
+
+    &:hover {
+        color: var(--main-color)
+    }
 }
 
 h1,

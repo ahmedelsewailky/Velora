@@ -1,0 +1,148 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
+
+.button {
+    font-weight: 500;
+    padding: 8px 18px;
+    align-items: center;
+    display: inline-flex;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: background 0.1s ease-in-out;
+    border-radius: 100px;
+    border: none;
+    letter-spacing: 0.75px;
+
+    i {
+        margin-left: 6px;
+    }
+}
+
+.button-sm {
+    padding: 4px 12px;
+    font-size: 13px;
+}
+
+.button-lg {
+    padding: 12px 24px;
+}
+
+.button-icon {
+    i {
+        display: grid !important;
+        place-content: center;
+        --size: 32px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 100%;
+        margin-left: 12px;
+    }
+
+    &.button-main {
+        i {
+            color: var(--main-color);
+            background-color: white;
+        }
+
+        &:hover i {
+            color: white;
+            background-color: var(--main-color);
+        }
+    }
+
+    &.button-dark {
+        i {
+            color: var(--dark-color);
+            background-color: white;
+        }
+
+        &:hover i {
+            background-color: var(--dark-color);
+            color: white;
+        }
+    }
+
+    &.button-outline-dark {
+        i {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        &:hover i {
+            color: var(--dark-color);
+            background-color: white;
+        }
+    }
+
+    &.button-white {
+        i {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        &:hover i {
+            color: var(--dark-color);
+            background-color: white;
+        }
+    }
+
+}
+
+.button-main {
+    color: white;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+
+    &:hover {
+        background-color: transparent;
+        color: var(--main-color);
+    }
+}
+
+.button-outline-main {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+@mixin button-solid-color($color) {
+    color: white;
+    background-color: $color;
+    border: 1px solid $color;
+
+    &:hover {
+        background-color: transparent;
+        color: $color;
+        border: 1px solid $color;
+    }
+}
+
+@mixin button-outline-style($color) {
+    border: 1px solid $color;
+    color: $color;
+
+    &:hover {
+        background-color: $color;
+        color: white;
+    }
+}
+
+@each $name, $color in $colors {
+    .button-#{$name} {
+        @include button-solid-color($color);
+    }
+
+    .button-outline-#{$name} {
+        @include button-outline-style($color);
+    }
+}
+
+.button-white {
+    color: var(--dark-color);
+    background-color: white;
+    border: 1px solid white;
+
+    &:hover {
+        color: white;
+        background-color: transparent;
+    }
+}
