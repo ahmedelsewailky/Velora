@@ -4,8 +4,10 @@
     display: inline-flex;
     align-items: center;
     border: 1px solid;
+    gap: 8px;
     padding: 10px 16px;
     border-radius: var(--border-radius-size);
+    transition: .3s ease;
 
     &-sm {
         padding: 4px 8px;
@@ -15,14 +17,34 @@
         padding: 16px 24px;
     }
 
-    &-icon i {
-        --size: 32px;
-        width: var(--size);
-        height: var(--size);
-        border-radius: 100px;
-        display: inline-grid;
-        place-content: center;
-        margin-left: 12px;
+    &:not(&-icon) i {
+        margin-left: 4px
+    }
+
+    &-icon {
+        span {
+            transition: all .3s ease;
+            order: 1;
+        }
+        i {
+            --size: 32px;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 100px;
+            display: inline-grid;
+            place-content: center;
+            transition: transform .3s ease, order .3s ease;
+            order: 2;
+            transform: translateX(0);
+        }
+    }
+
+    &-icon:hover i {
+        transform: translateX(-325%);
+    }
+    
+    &-icon:hover span {
+        transform: translateX(40px);
     }
 }
 
@@ -36,15 +58,15 @@
             background-color: white;
         }
 
-        &:hover {
-            color: $value;
-            background-color: transparent;
+        // &:hover {
+        //     color: $value;
+        //     background-color: transparent;
 
-            &.button-icon i {
-                color: white;
-                background-color: $value;
-            }
-        }
+        //     &.button-icon i {
+        //         color: white;
+        //         background-color: $value;
+        //     }
+        // }
     }
 }
 
@@ -58,15 +80,15 @@
             background-color: $value;
         }
 
-        &:hover {
-            color: white;
-            background-color: $value;
+        // &:hover {
+        //     color: white;
+        //     background-color: $value;
 
-            &.button-icon i {
-                color: $value;
-                background-color: white;
-            }
-        }
+        //     &.button-icon i {
+        //         color: $value;
+        //         background-color: white;
+        //     }
+        // }
     }
 }
 
