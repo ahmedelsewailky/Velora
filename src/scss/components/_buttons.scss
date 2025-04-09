@@ -9,73 +9,28 @@
     padding: 10px 16px;
     border-radius: var(--border-radius-size);
     transition: .3s ease;
-
-    &-sm {
-        padding: 4px 8px;
-    }
-
-    &-lg {
-        padding: 16px 24px;
-    }
-
-    &:not(&-icon) i {
-        margin-left: 4px
-    }
-
-    &-icon {
-        span {
-            transition: all .3s ease;
-            order: 1;
-        }
-
-        i {
-            --size: 32px;
-            width: var(--size);
-            height: var(--size);
-            border-radius: 100px;
-            display: inline-grid;
-            place-content: center;
-            transition: transform .3s ease, order .3s ease;
-            order: 2;
-            transform: translateX(0);
-        }
-    }
-
-    &-icon:hover i {
-        transform: translateX(-345%);
-    }
-
-    &-icon:hover span {
-        transform: translateX(40px);
-    }
 }
 
-@each $color, $value in $colors {
-    .button-#{$color} {
-        color: white;
-        background-color: $value;
-
-        &.button-icon i {
-            color: $value;
-            background-color: white;
-        }
-    }
+.button-sm {
+    padding: 4px 8px;
 }
 
-@each $color, $value in $colors {
-    .button-outline-#{$color} {
-        color: $value;
-        border-color: $value;
+.button-lg {
+    padding: 16px 24px;
+}
 
-        &.button-icon i {
-            color: white;
-            background-color: $value;
-        }
+.button:not(.button-icon) i {
+    margin-left: 4px
+}
 
-        &:hover {
-            background-color: color.adjust($value, $lightness: 75%)
-        }
-    }
+.button-icon i {
+    --size: 32px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 100px;
+    display: inline-grid;
+    place-content: center;
+    transition: .3s ease;
 }
 
 .button-main {
@@ -84,4 +39,42 @@
 
 .button-outline-main {
     @extend .button-outline-#{$mainColor};
+}
+
+// Solid buttons
+@each $color, $value in $colors {
+    .button-#{$color} {
+        color: white;
+        background-color: $value;
+
+        &.button-icon:hover,
+        &.button-icon i {
+            color: $value;
+            background-color: white;
+        }
+
+        &.button-icon:hover i {
+            color: white;
+            background-color: $value;
+        }
+    }
+}
+
+// Outline buttons
+@each $color, $value in $colors {
+    .button-outline-#{$color} {
+        color: $value;
+        border-color: $value;
+
+        &.button-icon i,
+        &.button-icon:hover {
+            color: white;
+            background-color: $value;
+        }
+
+        &.button-icon:hover i {
+            color: $value;
+            background-color: white;
+        }
+    }
 }
