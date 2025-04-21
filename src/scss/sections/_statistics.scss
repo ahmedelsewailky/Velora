@@ -5,6 +5,7 @@
     width: 90%;
     margin: 0 auto;
     border-radius: $borderRadiusSize;
+
     background: var(--dark-color) url("../images/abstracts/abstract-wave.png") {
         repeat: no-repeat;
         position-x: right;
@@ -13,7 +14,7 @@
 
     .section-image img {
         width: 100%;
-        border-radius: $borderRadiusSize;
+        border-radius: 12px 12px 7rem 12px;
     }
 
     .section-text {
@@ -21,6 +22,7 @@
         align-items: center;
         height: 100%;
         padding-left: 42px;
+
         @media (max-width: 992px) {
             padding-left: 0;
         }

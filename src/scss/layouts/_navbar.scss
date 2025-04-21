@@ -1,4 +1,7 @@
 .navbar {
+    transition: top 0.3s ease;
+    z-index: 999;
+
     .offcanvas {
         background-color: #fff !important;
         padding: 14px 12px;
@@ -99,7 +102,7 @@
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
         @media (min-width: 993px) {
-            .dropdown-menu { 
+            .dropdown-menu {
                 top: 0;
                 left: 100%;
             }
@@ -156,9 +159,10 @@
             border-bottom: .0625rem solid rgba(0, 0, 0, 0.1);
             font-weight: 600;
 
-            &.active {
+            &.active,
+            &.active:hover {
                 position: relative;
-                background-color: rgba(0, 0, 0, 0.03);
+                background-color: rgba(0, 0, 0, 0.03) !important;
                 color: var(--amber-color);
 
                 &::after {
@@ -214,6 +218,23 @@
             border-bottom: .0625rem solid rgba(0, 0, 0, 0.1);
             justify-content: space-between;
             height: 45px;
+        }
+    }
+
+    .sticky-logo {
+        display: none;
+    }
+
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transition: top 0.3s ease;
+
+        .sticky-logo {
+            display: block;
         }
     }
 }

@@ -57,6 +57,12 @@
             color: white;
             background-color: $value;
         }
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $value;
+            color: $value;
+        }
     }
 }
 
@@ -76,5 +82,16 @@
             color: $value;
             background-color: white;
         }
+
+        &:hover {
+            background-color: $value;
+            border: 1px solid $value;
+            color: white;
+        }
     }
+}
+
+.button-white:hover {
+    background-color: white;
+    color: black;
 }

@@ -1,6 +1,7 @@
 section.choose-us {
     background-color: #F1F5F9;
     position: relative;
+    padding-bottom: 0;
 
     .section-image {
         img:nth-child(1) {
@@ -27,7 +28,11 @@ section.choose-us {
             position: absolute;
             width: 70px;
             top: 7%;
-            left: 5%;
+            left: 25%;
+
+            @media (max-width: 576px) {
+                left: 5%;
+            }
         }
     }
 }
@@ -64,8 +69,8 @@ section.choose-us {
 }
 
 .float-box-counter {
-    right: 70%;
-    bottom: 10%;
+    right: 40%;
+    bottom: 14%;
     width: -moz-max-content;
     width: max-content;
     padding: 24px;
@@ -81,9 +86,9 @@ section.choose-us {
     }
 
     @media (max-width: 567px) {
-        left: 10px;
-        top: auto;
-        bottom: -10%;
+        left: auto;
+        top: 80%;
+        right: 10px;
     }
 
     .text h6 {

@@ -4,6 +4,11 @@
     padding: clamp(24px, 5vw, 84px) 0;
 }
 
+.hero-section.navbar-hidden,
+.hero-section.navbar-visible {
+    margin-top: 88px;
+}
+
 .hero-text {
     text-transform: capitalize;
 

@@ -160,7 +160,7 @@
                                         </ul>
                                     </div>
 
-                                    <button type="button" class="button shopping-cart d-lg-none" data-bs-toggle="offcanvas" href="#addToCartCanvas">
+                                    <button type="button" class="button shopping-cart d-lg-none border-0" data-bs-toggle="offcanvas" data-bs-target="#addToCartCanvas">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                                 <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
@@ -170,7 +170,7 @@
                                         <span>3</span>
                                     </button>
 
-                                    <button type="button" class="button sidebar-cyan-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#contactInfoCanvas">
+                                    <button type="button" class="button sidebar-cyan-button d-lg-none border-0" data-bs-toggle="offcanvas" data-bs-target="#contactInfoCanvas">
                                         <span class="visually-hidden">Contact Info Canvas Toggler</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <path fill="currentColor" d="M12.002 1.999c5.523 0 10.001 4.478 10.001 10.002c0 5.523-4.478 10.001-10.001 10.001C6.478 22.002 2 17.524 2 12.001C2 6.477 6.478 1.999 12.002 1.999m0 1.5a8.502 8.502 0 1 0 0 17.003a8.502 8.502 0 0 0 0-17.003M12 10.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5a.75.75 0 0 1 .75-.75M12 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
@@ -203,7 +203,7 @@
                 <!-- Navbar -->
                 <nav class="navbar navbar-expand-lg">
                     <div class="container">
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarMainMenu" aria-labelledby="navbarMainMenuLabel">
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarMainMenu">
                             <div class="offcanvas-header">
                                 <div class="logo">
                                     <a href="/" title="Velora">
@@ -220,6 +220,17 @@
                             </div>
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav d-flex align-items-center w-100 me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item logo sticky-logo">
+                                        <a href="/" class="navbar-link" title="Velora">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" color="currentColor">
+                                                    <path d="M6.514 2c-1.304.129-2.182.419-2.838 1.076c-1.175 1.177-1.175 3.072-1.175 6.863v4.02c0 3.79 0 5.686 1.175 6.864S6.743 22 10.526 22h2.007c3.783 0 5.675 0 6.85-1.177c1.067-1.07 1.166-2.717 1.175-5.846" />
+                                                    <path d="m10.526 7l1.003 3.5c.56 1.11 1.263 1.4 3.01 1.5c1.389-.034 2.195-.198 2.883-.796c.469-.408.681-1.023.784-1.635L18.55 7.5m2.508-2v5M8.601 4.933c1.587-1.317 3.001-2.024 5.934-2.802a1.94 1.94 0 0 1 1.009.005c2.596.714 3.998 1.348 5.876 2.758c.08.06.104.172.048.255c-.613.902-1.982 1.633-5.34 2.935a2.98 2.98 0 0 1-2.171-.012c-3.576-1.42-5.22-2.18-5.42-2.969a.17.17 0 0 1 .064-.17" />
+                                                </g>
+                                            </svg>
+                                            <span>Velora</span>
+                                        </a>
+                                    </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle active" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
                                         <ul class="dropdown-menu">
@@ -361,7 +372,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item d-none d-lg-block">
-                                        <button type="button" class="button shopping-cart position-relative border-0" data-bs-toggle="offcanvas" href="#addToCartCanvas">
+                                        <button type="button" class="button shopping-cart position-relative border-0" data-bs-toggle="offcanvas" data-bs-target="#addToCartCanvas">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                                     <path d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8" />
@@ -909,7 +920,8 @@
                                             </div>
                                             <div class="text">
                                                 <h6>Face-To-Face Teaching</h6>
-                                                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia for this is
+                                                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia for this
+                                                    is
                                                     a for that an deserunt mollit.</p>
                                             </div>
                                         </div>
@@ -919,7 +931,8 @@
                                             </div>
                                             <div class="text">
                                                 <h6>24/7 Support Available</h6>
-                                                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia for this is
+                                                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia for this
+                                                    is
                                                     a for that an deserunt mollit.</p>
                                             </div>
                                         </div>
@@ -929,7 +942,8 @@
                                             </div>
                                             <div class="text">
                                                 <h6>Interactive Learning Experience</h6>
-                                                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia for this is
+                                                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia for this
+                                                    is
                                                     a for that an deserunt mollit.</p>
                                             </div>
                                         </div>
@@ -939,14 +953,16 @@
                         </div>
 
                         <div class="col-12 col-lg-6 offset-lg-1">
-                            <div class="section-image text-center text-lg-start">
-                                <img src="assets/images/home/choose-img.jpg" data-speed="4" width="340" class="parallax-effect" alt="Image">
-                                <div class="float-box-counter parallax-effect" data-speed="8">
-                                    <div class="icon me-3">
-                                        <!-- SVG icon here -->
+                            <div class="section-image text-center text-lg-end">
+                                <img src="assets/images/home/choose-img.png" width="400" alt="Image">
+                                <div class="float-box-counter d-flex items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <path fill="#ffad11" fill-rule="evenodd" d="M11.998 21.076c-.53 0-.85 0-1.17-.14c-.42-.17-.77-.52-.94-.95c-.13-.32-.13-.64-.13-1.17v-13c0-.53 0-.85.13-1.17c.18-.43.51-.77.95-.95c.32-.13.64-.13 1.17-.13s.85 0 1.17.13c.43.18.77.52.95.95c.13.32.13.64.13 1.17v13c0 .53 0 .85-.13 1.17c-.18.43-.52.77-.95.95c-.32.13-.64.13-1.17.13zm0-16c-.26 0-.53 0-.6.02c-.06.02-.1.07-.13.13c-.02.06-.02.33-.02.6v13c0 .26 0 .53.02.6c.02.06.07.11.13.13c.14.04 1.06.04 1.2 0a.21.21 0 0 0 .13-.13c.02-.06.02-.33.02-.59v-13c0-.26 0-.53-.02-.6a.21.21 0 0 0-.13-.13c-.06-.02-.33-.02-.59-.02zM5 21.074c-.53 0-.85 0-1.17-.13c-.43-.18-.77-.52-.95-.95c-.13-.32-.13-.64-.13-1.17v-9c0-.53 0-.85.13-1.17c.18-.43.52-.77.95-.95c.32-.13.64-.13 1.17-.13s.85 0 1.17.13c.43.18.77.52.95.95c.13.32.13.64.13 1.17v9c0 .53 0 .85-.13 1.17c-.18.43-.52.77-.95.95c-.32.13-.64.13-1.17.13m0-12c-.26 0-.53 0-.6.02c-.06.02-.1.07-.13.13c-.02.06-.02.33-.02.6v9c0 .26 0 .53.02.6c.02.06.07.11.13.13c.13.04 1.06.04 1.2 0c.06-.02.1-.07.13-.13c.02-.06.02-.33.02-.6v-9c0-.26 0-.53-.02-.6a.21.21 0 0 0-.13-.13c-.06-.02-.33-.02-.6-.02m12.83 11.87c.32.13.64.13 1.17.13s.85 0 1.17-.13c.43-.18.77-.52.95-.95c.13-.32.13-.64.13-1.17v-6c0-.53 0-.85-.13-1.17c-.18-.43-.52-.77-.95-.95c-.32-.13-.64-.13-1.17-.13s-.85 0-1.17.13c-.43.18-.77.52-.95.95c-.13.32-.13.64-.13 1.17v6c0 .53 0 .85.13 1.17c.18.43.52.77.95.95m1.17-8.87c.27 0 .54 0 .6.02s.11.07.13.13c.02.07.02.34.02.6v6c0 .27 0 .54-.02.6c-.03.06-.07.11-.13.13c-.14.04-1.07.04-1.2 0a.21.21 0 0 1-.13-.13c-.02-.07-.02-.34-.02-.6v-6c0-.27 0-.54.02-.6c.03-.06.07-.11.13-.13c.07-.02.34-.02.6-.02" color="#ffad11" />
+                                        </svg>
                                     </div>
-                                    <div class="text">
-                                        <h6><span class="odometer" data-value="8540">0</span>K+</h6>
+                                    <div class="flex-grow-1">
+                                        <h6 class="fs-4 fw-bolder"><span class="odometer" data-value="8540">0</span>K+</h6>
                                         <p class="mb-0">Satisfied Students</p>
                                     </div>
                                 </div>
@@ -1004,7 +1020,7 @@
             </section>
 
             <!-- Section: Brands -->
-            <section class="section brands wow wow-animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
+            <div class="section brands wow wow-animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
                 <div class="container">
                     <p class="text-center mb-5">Get in touch with the <strong>250+</strong> companies who Collaboration us</p>
                     <div class="swiper brand-slider">
@@ -1027,7 +1043,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Section: Testimonials -->
             <section class="section testimonials wow wow-animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
@@ -1197,15 +1213,15 @@
                                                 <div class="meta-date"><i class="bx bx-calendar"></i> March 27, 2025</div>
                                                 <div class="meta-comments"><i class="bx bx-comment-dots"></i> 12 Comments</div>
                                             </div>
-                                            <a href="#" class="post-title">Top Digital Marketing Strategies to Boost Sales in
-                                                2025</a>
+                                            <a href="#" class="post-title">How to Choose the Right Online Course: A Beginners
+                                                Guide</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-3 col-mb-3">
                                     <div class="blog-post">
                                         <div class="post-image">
-                                            <img src="assets/images/blog/blog-3.jpg" alt="Blog post image">
+                                            <img src="assets/images/blog/blog-4.jpg" alt="Blog post image">
                                             <a href="#" class="meta-tag">Marketing</a>
                                         </div>
                                         <div class="post-content">
@@ -1228,37 +1244,28 @@
             <section class="section get-started wow wow-animated animate__fadeInUp" data-wow-delay="0.2s">
                 <div class="container">
                     <div class="section-inner">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="section-image">
-                                    <img src="assets/images/home/get-started.png" class="w-100" alt="Image">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-1 align-self-center">
-                                <div class="section-text">
-                                    <h6 class="subtitle">Our Started
-                                        Now
-                                    </h6>
+                        <div class="section-text">
+                            <h6 class="subtitle">Our Started
+                                Now
+                            </h6>
 
-                                    <h3 class="title fw-light my-3">
-                                        Affordable
-                                        Your
-                                        <span class="fw-bold">Online Courses</span> & Learning
-                                        Opportunities
-                                    </h3>
+                            <h3 class="title fw-light my-3">
+                                Affordable
+                                Your
+                                <span class="fw-bold">Online Courses</span> & Learning
+                                Opportunities
+                            </h3>
 
-                                    <p class="text-white mb-4">
-                                        Excepteur sint
-                                        occaecat
-                                        cupidatat non proident sunt in culpa qui officia deserunt
-                                        mollit. Excepteur sint occaecat.</p>
+                            <p class="text-white mb-4">
+                                Excepteur sint
+                                occaecat
+                                cupidatat non proident sunt in culpa qui officia deserunt
+                                mollit. Excepteur sint occaecat.</p>
 
-                                    <a href="#" class="button button-white button-icon" data-wow-delay="1.2s">
-                                        Start Learning Today
-                                        <i class='bx bx-right-arrow-alt'></i>
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="#" class="button button-white button-icon" data-wow-delay="1.2s">
+                                Start Learning Today
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1438,7 +1445,7 @@
                             <span class="price" data-price="10">$10.00</span>
                             <div class="quantity-input">
                                 <button type="button" class="decrease">−</button>
-                                <input type="text" class="quantity-value" value="1" min="1" aria-label="quantity">
+                                <input type="text" class="quantity-value" value="1" aria-label="quantity">
                                 <button type="button" class="increase">+</button>
                             </div>
                         </div>
@@ -1460,7 +1467,7 @@
                             <span class="price" data-price="45">$45.00</span>
                             <div class="quantity-input">
                                 <button type="button" class="decrease">−</button>
-                                <input type="text" class="quantity-value" value="1" min="1" aria-label="quantity">
+                                <input type="text" class="quantity-value" value="1" aria-label="quantity">
                                 <button type="button" class="increase">+</button>
                             </div>
                         </div>
@@ -1482,7 +1489,7 @@
                             <span class="price" data-price="75">$75.00</span>
                             <div class="quantity-input">
                                 <button type="button" class="decrease">−</button>
-                                <input type="text" class="quantity-value" value="1" min="1" aria-label="quantity">
+                                <input type="text" class="quantity-value" value="1" aria-label="quantity">
                                 <button type="button" class="increase">+</button>
                             </div>
                         </div>
@@ -1517,7 +1524,7 @@
     <!-- Sidebar Canvas cyanrmations -->
     <div class="offcanvas contact-info-canvas offcanvas-end" tabindex="-1" id="contactInfoCanvas" aria-labelledby="contactInfoCanvasLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="contactInfoCanvasLabel">
+            <div class="offcanvas-title" id="contactInfoCanvasLabel">
                 <div class="logo">
                     <a href="/" title="Velora">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1529,7 +1536,7 @@
                         <span>Velora</span>
                     </a>
                 </div>
-            </h5>
+            </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -1623,7 +1630,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tk3fL1iv3Kk?si=2vFjZFeayMyCzi7n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <video src="/assets/images/videos/video-1.mp4" controls></video>
                     </div>
                 </div>
             </div>

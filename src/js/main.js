@@ -27,6 +27,59 @@ $(function () {
         $(".dropdown-menu.show").last().removeClass("show");
     });
 
+    /**
+     * Sticky Navbar
+     */
+    $(document).ready(function () {
+        var navbar = $('.navbar');
+        var navbarOffset = navbar.offset().top + 100;
+        var lastScrollTop = 0;
+        var delta = 5;
+
+        function toggleSticky() {
+            if ($(window).width() > 992) {
+                var currentScroll = $(window).scrollTop();
+
+                if (Math.abs(currentScroll - lastScrollTop) > delta) {
+                    if (currentScroll > lastScrollTop && currentScroll > navbarOffset) {
+                        navbar.addClass('sticky');
+                        navbar.css('top', '-100px');
+
+                        $('.hero-section')
+                            .removeClass('navbar-visible')
+                            .addClass('navbar-hidden');
+                    } else if (currentScroll < lastScrollTop) {
+                        navbar.addClass('sticky');
+                        navbar.css('top', '0');
+
+                        $('.hero-section')
+                            .removeClass('navbar-hidden')
+                            .addClass('navbar-visible');
+                    }
+                    lastScrollTop = currentScroll;
+                }
+
+                if (currentScroll <= navbarOffset) {
+                    navbar.removeClass('sticky');
+                    navbar.css('top', '');
+
+                    $('.hero-section')
+                        .removeClass('navbar-visible navbar-hidden');
+                }
+
+            } else {
+                navbar.removeClass('sticky');
+                navbar.css('top', '');
+
+                $('.hero-section')
+                    .removeClass('navbar-visible navbar-hidden');
+            }
+        }
+
+        $(window).on('scroll resize', function () {
+            toggleSticky();
+        });
+    });
 });
 
 /**
